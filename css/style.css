@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    /* --- calibri--- */
+    background-color: rgb(220 241 249 );
+    color: #2A3F4A;
+    line-height: 1.6;
+    
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+}
+a {
+    text-decoration: none;
+    color: #2A3F4A ;
+}
+
+ul {
+    list-style: none;
+}
+
+/* --- NAVBAR --- */
+
+.navbar{
+    background-color: aliceblue;
+    padding : 20px 0 ;
+
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color :black ;
+}
+
+.logo-icon {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-links a {
+    font-size: 0.9rem ;
+    font-weight: 500;
+    color:#2A3F4A ;
+    transition: color 0.2s;
+}
+
+.nav-links a.active, 
+.nav-links a:hover {
+  color: #0f172a;
+  font-weight: 700;
+}
+
+.btn-lang {
+  background: #cbd5e1;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* --- HERO SECTION --- */
+.hero {
+  padding: 80px 0 100px;
+  text-align: left;
+}
+
+.hero-container {
+    max-width: 700px;
+    margin-left: 100px ;
+}
+
+.sub-title {
+  font-size: 0.75rem;
+  letter-spacing: 1.5px;
+  color: #64748b;
+  font-weight: 600;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 15px 0;
+  color: #0f172a;
+}
