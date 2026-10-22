@@ -392,6 +392,192 @@ border: 2px solid #079CCB;
   font-weight: bold;
   
 }
+
+
+/* --- SOLUTIONS PAGE--- */
+
+
+.main-sol {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.section-sol {
+  width: 100%;
+  padding: 72px 50px;
+  overflow: hidden;
+}
+
+.section--light-sol {
+  background-color: #f8fbfc;
+}
+
+.section--blue-sol {
+  background-color: #c7eaf8;
+}
+
+.section-sol:first-child {
+  padding-top: 72px;
+  padding-bottom: 60px;
+}
+
+.container-sol {
+  width: 100%;
+  position: relative;
+}
+
+.container--header-sol {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.container--split-sol {
+  max-width: 1100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 52px;
+  width: 100%;
+}
+
+
+.content-col-sol {
+  flex: 1 0 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15.2px;
+}
+
+.image-col-sol {
+  flex: 1 0 0;
+  min-width: 0;
+  padding-bottom: 4px;
+}
+
+
+.label-sol {
+  font-size: 12.8px;
+  font-weight: 500;
+  color: #799dab;
+  letter-spacing: 1.28px;
+  text-transform: uppercase;
+}
+
+.heading-1-sol {
+  font-size: 48px;
+  font-weight: 700;
+  color: #2a3f4a;
+  letter-spacing: -0.96px;
+  line-height: normal;
+}
+
+.heading-2-sol {
+  font-size: 29.6px;
+  font-weight: 700;
+  color: #2a3f4a;
+  letter-spacing: -0.444px;
+  line-height: normal;
+}
+
+.description-sol {
+  font-size: 16px;
+  font-weight: 400;
+  color: #5a7580;
+  line-height: 26.4px;
+}
+
+.description--wide-sol {
+  font-size: 16.8px;
+  line-height: 27.72px;
+  max-width: 620px;
+}
+
+
+.feature-list-sol {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 9.5px;
+  padding: 8.8px 0 4.8px;
+  font-size: 14.7px;
+  color: #5a7580;
+  font-weight: 400;
+}
+
+.feature-item-sol {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  white-space: nowrap;
+}
+
+.checkmark-sol {
+  font-weight: 700;
+  color: #799dab;
+  line-height: 22.82px;
+  flex-shrink: 0;
+}
+
+.feature-item-sol span:last-child {
+  line-height: 22.82px;
+}
+
+
+.vertical-border-sol {
+  border-left: 2px solid #dcf1f9;
+  padding-left: 12px;
+}
+
+.vertical-border-sol p {
+  font-size: 13.1px;
+  font-style: italic;
+  font-weight: 400;
+  color: #aac3cc;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+
+.image-pill-sol {
+  position: relative;
+  height: 300px;
+  border-radius: 200px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.image-pill__img-sol {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  max-width: none;
+  pointer-events: none;
+}
+
+
+.image-pill__img--logistics-sol {
+  height: 232.89%;
+  top: -66.44%;
+}
+
+
+.image-pill__img--healthcare-sol {
+  height: 262%;
+  top: -81%;
+}
+
+.image-pill__img--education-sol {
+  height: 108.68%;
+  top: -4.34%;
+}
+
+
+
 /* --- FOOTER --- */
 .footer {
   background-color: #093546;
