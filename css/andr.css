@@ -1,0 +1,138 @@
+/* ==========================================
+   ABOUT US PAGE START
+   ========================================== */
+.page-header {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.page-header h1 {
+    font-size: 55px;
+    font-weight: 600;
+    color: #054963;
+}
+
+.history-intro {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-left: 80px;
+}
+
+.history-intro h2 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #34505B;
+    margin-bottom: 8px;
+}
+
+.history-intro p {
+    font-size: 20px;
+    font-weight: 300;
+    color: #34505B;
+}
+
+/* ==========================================
+   ABOUT US PAGE END
+   ========================================== */
+
+
+
+/* ========================================== */
+/* HISTORY TIMELINE SECTION                   */
+/* ========================================== */
+.history-timeline {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 40px 80px 80px 80px;
+}
+
+.timeline-track {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+/* The horizontal grey line running across */
+.timeline-line {
+  position: absolute;
+  top: 6px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #cbd5e1;
+  z-index: 1;
+}
+
+/* 4-column layout so dots match the text grid below perfectly */
+.timeline-dots {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  position: relative;
+  z-index: 2;
+}
+
+.timeline-dots .dot {
+  width: 14px;
+  height: 14px;
+  background-color: #34505B;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  justify-self: start; /* Aligns dot perfectly with the column text */
+}
+
+/* 4-column grid for the text milestones */
+.timeline-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.timeline-item h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #34505B;
+  margin-bottom: 12px;
+}
+
+.timeline-item p {
+  font-size: 15px;
+  font-weight: 300;
+  color: #34505B;
+  line-height: 1.6;
+}
+
+/* ========================================== */
+/* STATS BANNER SECTION (#799DAB)             */
+/* ========================================== */
+.stats-banner {
+  background-color: #799DAB;
+  width: 100%;
+  padding: 60px 0;
+  color: #ffffff;
+  margin-top: 40px;
+}
+
+.stats-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 80px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  text-align: center;
+}
+
+.stat-item .stat-number {
+  font-size: 44px;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.stat-item .stat-label {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+
+
