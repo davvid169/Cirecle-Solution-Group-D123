@@ -50,3 +50,77 @@
 .contant-list li:last-child {
        border-bottom: none;
    }
+
+.contact-form{
+    display: flex;
+    align-items: flex-start;
+}
+
+.right-box{
+    flex: 1;
+    border: 2px solid black;
+    height: auto;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 60px;
+    background-color: #799DAB;
+}
+
+.form-box{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form-header h2{
+    margin: 0;
+    color: #2A3F4A;
+}
+
+.form-header p{
+    margin: 0;
+    font-size: 12px;
+}
+
+.field{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.field label{
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #2A3F4A;
+}
+
+.field input, textarea{
+     font-family: inherit;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 12px;
+    background-color: white;
+}
+
+.field textarea{
+    height: 150px;
+    resize: vertical;
+}
+
+.form-box button{
+    background-color: #093546;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.form-box button:hover{
+    background-color: #079ccb;
+}
