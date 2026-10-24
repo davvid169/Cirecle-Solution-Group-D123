@@ -256,3 +256,35 @@
    ABOUT US PAGE END
    ========================================== */
 
+
+/* ==========================================
+   FAQ PAGE START
+   ========================================== */
+
+   /* ==========================================
+   FAQ PAGE STYLES
+   ========================================== */
+
+.faq-main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 20px 100px 20px;
+}
+
+/* Header Text */
+.faq-header {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.faq-header h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #054963;
+  margin-bottom: 12px;
+}
+
+.faq-header .subtitle {
+  font-size: 16px;
+  color: #64748b;
+}
