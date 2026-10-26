@@ -1,8 +1,8 @@
 <?php
-ıf (ısset($_POST)){
-  // do something here
+  if (isset($_POST)){
+    // do something here //
 
-}
+  }
 
 ?>
 <!DOCTYPE html>
@@ -51,7 +51,7 @@
                     
                 <div class="alert">
                         Thank you for subscribing! Your details have been sent successfully.
-                    </div>
+                </div>
 
 
     
@@ -79,7 +79,7 @@
 
              <button type="submit">Sign the guestbook</button>
         </form>
-    </div>
+</div>
 
 
 
@@ -138,5 +138,3 @@
 
 </body>
 </html>
-
-
