@@ -1,9 +1,16 @@
 <?php
-  if (isset($_POST)){
-    // do something here //
+$message_sent = false;
 
-  }
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $name    = trim($_POST['name'] ?? '');
+    $company = trim($_POST['companyname'] ?? '');
+    $message = trim($_POST['message'] ?? '');
 
+    if ($name !== '' && $message !== '') {
+        // save the entry here (database or file)
+        $message_sent = true;
+    }
+}
 ?>
 <!DOCTYPE html>
 <html lang="tr">
@@ -48,10 +55,10 @@
     <!-- Form -->
 
       <?php if ($message_sent): ?>
-                    
-                <div class="alert">
-                        Thank you for subscribing! Your details have been sent successfully.
-                </div>
+        <div class="alert">
+           <p>Thank you! Your message has been added to the guestbook.</p> 
+        </div>
+      <?php endif; ?>
 
 
     
