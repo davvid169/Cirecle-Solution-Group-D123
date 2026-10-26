@@ -8,7 +8,7 @@
 }
 
 .page-header h1 {
-    font-size: 55px;
+    font-size: 50px;
     font-weight: 600;
     color: #054963;
 }
@@ -20,7 +20,7 @@
 }
 
 .history-intro h2 {
-    font-size: 36px;
+    font-size: 30px;
     font-weight: 600;
     color: #34505B;
     margin-bottom: 8px;
@@ -256,3 +256,112 @@
    ABOUT US PAGE END
    ========================================== */
 
+
+/* ==========================================
+   FAQ PAGE START
+   ========================================== */
+
+.faq-main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 20px 100px 20px;
+}
+
+/* Header Text */
+.faq-header {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.faq-header h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #054963;
+  margin-bottom: 12px;
+}
+
+.faq-header .subtitle {
+  font-size: 16px;
+  color: #64748b;
+}
+
+/* FAQ Cards Stack */
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 60px;
+}
+
+.faq-card {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 24px 28px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.faq-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.faq-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #054963;
+  margin-bottom: 10px;
+}
+
+.faq-card p {
+  font-size: 15px;
+  color: #475569;
+  line-height: 1.6;
+}
+
+/* Dark Callout Box */
+.faq-contact-box {
+  background-color: #054963;
+  border-radius: 16px;
+  padding: 36px 40px;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.contact-box-content h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
+.contact-box-content p {
+  font-size: 14px;
+  color: #cbd5e1;
+  max-width: 500px;
+  line-height: 1.5;
+}
+
+/* Arrow Button inside Callout */
+.contact-box-btn {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 20px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  flex-shrink: 0;
+}
+.contact-box-btn:hover {
+  background-color: #ffffff;
+  color: #054963;
+  transform: scale(1.05);
+}
