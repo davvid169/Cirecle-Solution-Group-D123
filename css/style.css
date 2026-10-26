@@ -66,17 +66,12 @@ ul {
     font-weight: 500;
     color:#2A3F4A ;
     transition: color 0.2s;
-    padding: 8px 15px; 
-  transition: all 0.2s ease;
-   border-radius: 40px;
 }
 
 .nav-links a.active, 
 .nav-links a:hover {
   background-color: rgb(220 241 249 );
-  transform: scale(1.08);
-  transition: all 0.2s ease;
-  padding: 12px 20px;
+  border-radius: 10;
   
 }
 
@@ -94,8 +89,8 @@ ul {
 .hero {
     position: relative;
     width: 100%;
-    min-height: 500px; /* Alanın sıkışmaması için yükseklik */
-    background: url('../images/BACKG.png') no-repeat center center / cover;
+    min-height: 500px; /* Alanın sıkışmaması için yükseklik verdik */
+    background: url('BACKG.png') no-repeat center center / cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -106,7 +101,7 @@ ul {
 }
 .hero-container {
   max-width: 700px;
-  margin-left: 100px; 
+  margin-left: 100px; /* Görseldeki sol hizalamaya uygun */
 }
 
 .sub-title {
@@ -159,56 +154,17 @@ ul {
   
 }
 
-
-.dots-section .container.grid-2 {
-  position: relative;
-}
-
-.dots-section .badge {
-  position: absolute;
-  top: -80px;
-  right: 20px;
-  z-index: 5;
-}
-
-.badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px; 
-  background-color: #122836; 
-  color: #ffffff;
-  font-weight: 700;
-  font-size: 0.85rem;
-  letter-spacing: 0.5px;
-  padding: 10px 22px;
-  border-radius: 20px; 
-  width: fit-content;
-}
-
-/* Little point */
-
-.badge .dot {
-  width: 10px;
-  height: 10px;
-  background-color: rgb(220 241 249 ); 
-  border-radius: 50%; 
-  display: inline-block;
-}
-
 .grid-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 0px;
+  gap: 40px;
   align-items: center;
 }
-
 
 .dots-image img {
   width: 50%;
   border-radius: 12px;
-  margin-left: 90px;
-  justify-content: flex-start;
-  
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
 .dots-content h2 {
@@ -217,23 +173,21 @@ ul {
   letter-spacing: 1px;
   margin-bottom: 15px;
   color: #0f172a;
-  margin-right: 150px;
 }
 
 .dots-content .lead {
   font-size: 0.95rem;
-  margin-right: 150px;
+  margin-bottom: 15px;
 }
 .dots-content ul {
   list-style-type: disc;
-  padding-left: 0px;
-  margin-right: 100px;
+  padding-left: 20px;
 }
 
 .dots-content li {
   font-size: 0.85rem;
+  margin-bottom: 10px;
   color: #334155;
- 
 }
 
 /* --- QUOTE SECTION --- */
@@ -289,28 +243,13 @@ ul {
 }
 
 .quote-author {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;  
-  align-items: flex-end;   
-  text-align: right;
+    margin-top: 15px;
 }
-
 
 .author-name {
     font-weight: bold;
     display:block;
     margin-bottom: 10px;
-    color: aliceblue;
-    font-size: 1.1rem;
-}
-
-
-.author-logo {
-  max-width: 100px;  
-  max-height: 30px;      
-  height: auto;
-  display: block;
 }
 
 
@@ -535,5 +474,4 @@ border: 2px solid #079CCB;
     border-radius: 20px;
     padding: 40px 20px;
   }
-  
 }
