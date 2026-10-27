@@ -1,0 +1,90 @@
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+/* Header Section */
+.privacy-header {
+    margin-bottom: 40px;
+}
+
+.privacy-header h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 12px;
+}
+
+.privacy-header .subtitle {
+    font-size: 16px;
+    color: #4B5563;
+    max-width: 800px;
+    line-height: 1.5;
+}
+
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 16px;
+    padding: 32px;
+}
+
+.card h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1F2937;
+    margin-bottom: 12px;
+}
+
+.card p {
+    font-size: 15px;
+    color: #4B5563;
+    line-height: 1.6;
+}
+
+.card a {
+    color: #2563EB;
+    text-decoration: underline;
+}
+
+
+.actions {
+    display: flex;
+    gap: 16px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 12px; 
+    font-weight: 500;
+    font-size: 15px;
+    text-decoration: underline;
+    background-color: #F3F4F6;
+    color: #374151;
+    border: 1px solid #E5E7EB;
+    text-align: center;
+    transition: background-color 0.2s ease , border-color 0.2s;
+}
+
+.btn:hover {
+    background-color: #E5E7EB;
+    border-color: #9ca3af;
+}
+
+
+
+@media (max-width: 768px) {
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+}
