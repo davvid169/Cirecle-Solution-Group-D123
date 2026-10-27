@@ -70,11 +70,7 @@ $messages = $_SESSION['guestbook_messages'];
     <!-- MAIN CONTAINER -->
     <main class="container main-guestbook-layout">
         
-        <?php if ($message_sent): ?>
-            <div class="alert success-alert">
-                <p>Thank you! Your message has been sent successfully.</p>
-            </div>
-        <?php endif; ?>
+      
 
         <!-- FORM ALANI -->
         <div class="guestbook-form-section">
@@ -86,16 +82,19 @@ $messages = $_SESSION['guestbook_messages'];
                 <form action="guestbook.php" method="POST">
                     <div class="form-group">
                         <label for="name">Your Name:</label>
+                        <br>
                         <input type="text" id="name" name="name" placeholder="Sarah Klein.." required>
                     </div>
 
                     <div class="form-group">
                         <label for="companyname">Company Name:</label>
+                        <br>
                         <input type="text" id="companyname" name="companyname" placeholder="Circle Solutions..." required>
                     </div>
 
                     <div class="form-group">
                         <label for="message">Your Message:</label>
+                        <br>
                         <textarea id="message" name="message" placeholder="Share your experience with us..." required></textarea>
                     </div>
 
@@ -106,8 +105,6 @@ $messages = $_SESSION['guestbook_messages'];
 <BR></BR>
         <hr>
         <br>
-
-
 
 
         <!-- RESPONSE -->
