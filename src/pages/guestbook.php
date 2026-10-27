@@ -83,7 +83,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <label for="message">Your Message:</label>
     <textarea id="message" name="message" placeholder="Share your experience with us..."></textarea>
 </div>
-
              <button type="submit">Sign the guestbook</button>
         </form>
 </div>
