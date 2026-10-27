@@ -35,26 +35,27 @@ if(empty($message)){
         <title>Result page</title>
         <link rel="stylesheet" href="../css/david.css">
     </head>
-    <body>
+    <body class="body-result">
             <?php if(count($error) > 0){ ?>
                 <section class="errors">
-                    <h3>Solve these problems:</h3>
+                    <h2>Please correct the following</h2>
 
                     <?php foreach($error as $err) { ?>
                             <p><?= $err ?></p>
+                    <?php } ?>
+                        <a href="../pages/contact.html">Back to the form</a>
                 </section>
-            <?php } ?>
+            
                 <?php } else { ?>
                     <section class="answer">
-                        <h3>Thank you your message has been succesfully sent</h3>
+                        <h2>Thank you!</h2>
+                        <h3>Your message has been succesfully sent.</h3> 
                         <p>Name : <?= $name ?></p>
                         <p>Email : <?= $email ?></p>
                         <p>Message : <?= $message ?></p>
-                   
-                        <?php } ?>
+                        <a href="../pages/contact.html">Back to the form</a>
                     </section>
-        <div>
-            <a href="../pages/contact.html">Back to the form</a>
-        </div>
+                <?php } ?>
+        
     </body>
 </html>
