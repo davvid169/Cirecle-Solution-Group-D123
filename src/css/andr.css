@@ -10,7 +10,7 @@
 .page-header h1 {
     font-size: 50px;
     font-weight: 600;
-    color: #054963;
+    color: #2a3f4a;
 }
 
 .history-intro {
@@ -276,7 +276,7 @@
 .faq-header h1 {
   font-size: 36px;
   font-weight: 700;
-  color: #054963;
+  color: #2a3f4a;
   margin-bottom: 12px;
 }
 
@@ -295,7 +295,7 @@
 
 .faq-card {
   background-color: #f8fafc;
-  border: 1px solid #e2e8f0;
+  border: 1px solid #cbd5e1;
   border-radius: 12px;
   padding: 24px 28px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
