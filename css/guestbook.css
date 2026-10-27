@@ -5,16 +5,6 @@
     padding: 0 20px;
 }
 
-/* Başarı Mesajı */
-.success-alert {
-    background-color: #d1e7dd;
-    color: #0f5132;
-    padding: 16px 20px;
-    margin-bottom: 25px;
-    border-radius: 12px;
-    border: 1px solid #badbcc;
-    font-weight: 500;
-}
 
 /* Form Bölümü */
 .guestbook-form-section {
