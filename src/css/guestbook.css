@@ -75,12 +75,12 @@
     min-height: 100px;
 }
 
-/* Uzatılmış Gönder Butonu */
+/* Gönder Butonu */
 .btn-submit {
     width: 100%;
-    background-color: #ffffff;
-    color: #0f172a;
-    border: 1px solid #cbd5e1;
+    background-color: #1e293b;
+    color: #ffffff;
+    border: 1px solid #0f172a;
     padding: 12px 18px;
     border-radius: 8px;
     font-weight: 600;
@@ -91,7 +91,7 @@
 }
 
 .btn-submit:hover {
-    background-color: #f1f5f9;
+    background-color: #0f172a;
 }
 
 /* --- RESPONSE --- */
@@ -134,12 +134,12 @@
     margin-top: 2px;
 }
 
-/* Mesaj İçerik Kutusu (Light Blue Grey: #dcf1f9) */
+/* Mesaj İçerik Kutusu (Light Blue Grey: #dcf1f9 + İnce Kendi Tonunda Border) */
 .card-body {
     background-color: #dcf1f9;
     border-radius: 12px;
     padding: 20px;
-    border: 1px solid #c8e8f6;
+    border: 1px solid #bce1f1; /* Arka plan rengine yakın, daha belirgin ince çerçeve */
 }
 
 .card-body p {
