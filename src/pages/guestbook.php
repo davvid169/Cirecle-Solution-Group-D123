@@ -6,16 +6,40 @@ if (!isset($_SESSION['guestbook_messages'])) {
 }
 
 $message_sent = false;
+$error_message = '';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = trim($_POST['name'] ?? '');
     $companyname = trim($_POST['companyname'] ?? '');
     $message = trim($_POST['message'] ?? '');
 
-    if (!empty($name) && !empty($companyname) && !empty($message)) {
+    
+    $name_pattern = "/^\p{L}+([\s'\p{L}]+)*$/u";
+
+    $company_pattern = "/^[\p{L}0-9\s.,&\-]+$/u";
+
+    if (empty($name) || empty($companyname) || empty($message)) {
+        $error_message = "Please fill in all required fields.";
+    } elseif (mb_strlen($name) < 2 || mb_strlen($name) > 50) {
+        $error_message = "Name must be between 2 and 50 characters long.";
+    } elseif (!preg_match($name_pattern, $name)) {
+        $error_message = "Name can only contain letters and spaces (no numbers or special characters allowed).";
+    } elseif (mb_strlen($companyname) < 3 || mb_strlen($companyname) > 100) {
+        $error_message = "Company name must be between 3 and 100 characters long.";
+    } elseif (!preg_match($company_pattern, $companyname)) {
+        $error_message = "Company name cannot contain forbidden special characters like ?, !, /, \\, {, }, [, ], < >, *, =, %.";
+    } elseif (mb_strlen($message) < 10) {
+        $error_message = "Your message is too short. Please provide at least 10 characters.";
+    } elseif (mb_strlen($message) > 500) {
+        $error_message = "Your message cannot exceed 500 characters.";
+    } else {
+        // Capitalization for name and company name
+        $formatted_name = mb_convert_case(mb_strtolower($name, 'UTF-8'), MB_CASE_TITLE, 'UTF-8');
+        $formatted_company = mb_convert_case(mb_strtolower($companyname, 'UTF-8'), MB_CASE_TITLE, 'UTF-8');
+
         $newMessage = [
-            'name' => htmlspecialchars($name),
-            'company' => htmlspecialchars($companyname),
+            'name' => htmlspecialchars($formatted_name),
+            'company' => htmlspecialchars($formatted_company),
             'message' => htmlspecialchars($message)
         ];
 
@@ -36,8 +60,9 @@ $messages = $_SESSION['guestbook_messages'];
 
 
 
+
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -67,56 +92,70 @@ $messages = $_SESSION['guestbook_messages'];
         </div>
     </header>
 
-    <!-- MAIN CONTAINER -->
     <main class="container main-guestbook-layout">
         
-      
-
-        <!-- FORM ALANI -->
+        <!-- FORM -->
         <div class="guestbook-form-section">
             <span class="sub-title2">Guestbook</span>
             <h1>Share your experience</h1>
             <p class="subtitle-text">Worked with Circle Solutions? Leave a note for our team in the guestbook.</p>
 
+            <!-- Success  -->
+            <?php if ($message_sent): ?>
+                <div style="background-color: #d4edda; color: #155724; padding: 12px; margin-bottom: 20px; border-radius: 5px;">
+                    Thank you! Your message has been successfully posted.
+                </div>
+            <?php endif; ?>
+
+            <!-- Error -->
+            <?php if (!empty($error_message)): ?>
+                <div style="background-color: #f8d7da; color: #721c24; padding: 12px; margin-bottom: 20px; border-radius: 5px;">
+                    <?php echo htmlspecialchars($error_message); ?>
+                </div>
+            <?php endif; ?>
+
             <div class="form-back">
                 <form action="guestbook.php" method="POST">
                     <div class="form-group">
-                        <label for="name">Your Name:</label>
+                        <label for="name">Your Name :</label>
                         <br>
-                        <input type="text" id="name" name="name" placeholder="Sarah Klein.." required>
+                        <input type="text" id="name" name="name" placeholder="Sarah Klein.." 
+                               minlength="2" maxlength="50" 
+                               value="<?php echo isset($_POST['name']) ? htmlspecialchars($_POST['name']) : ''; ?>">
                     </div>
 
                     <div class="form-group">
-                        <label for="companyname">Company Name:</label>
+                        <label for="companyname">Company Name :</label>
                         <br>
-                        <input type="text" id="companyname" name="companyname" placeholder="Circle Solutions..." required>
+                        <!-- Forbidden: ?, !, /, \, {}, [], <>, *, =, % -->
+                        <input type="text" id="companyname" name="companyname" placeholder="Circle Solutions..." 
+                               minlength="3" maxlength="100" 
+                               value="<?php echo isset($_POST['companyname']) ? htmlspecialchars($_POST['companyname']) : ''; ?>">
                     </div>
 
                     <div class="form-group">
-                        <label for="message">Your Message:</label>
+                        <label for="message">Your Message (10 - 500 characters):</label>
                         <br>
-                        <textarea id="message" name="message" placeholder="Share your experience with us..." required></textarea>
+                        <textarea id="message" name="message" placeholder="Share your experience with us..." 
+                                  minlength="10" maxlength="500"><?php echo isset($_POST['message']) ? htmlspecialchars($_POST['message']) : ''; ?></textarea>
                     </div>
 
                     <button type="submit" class="btn-submit">Sign the guestbook</button>
                 </form>
             </div>
         </div>
-<BR></BR>
+        <br><br>
         <hr>
         <br>
 
-
-        <!-- RESPONSE -->
-         
+        <!-- response  -->
         <div class="guestbook-feed-section">
-            
             <?php if (empty($messages)): ?>
                 <div class="empty-state">
                     <p>No messages yet. Be the first to share your experience!</p>
                 </div>
-            <?php else: ?>
 
+            <?php else: ?>
                 <div class="feed-cards-container">
                     <?php foreach ($messages as $msg): ?>
                         <div class="guestbook-card">
@@ -126,7 +165,6 @@ $messages = $_SESSION['guestbook_messages'];
                                     <span class="company-name"><?php echo $msg['company']; ?></span>
                                 </div>
                             </div>
-
 
                             <div class="card-body">
                                 <p>"<?php echo nl2br($msg['message']); ?>"</p>
@@ -139,11 +177,7 @@ $messages = $_SESSION['guestbook_messages'];
 
     </main>
 
-
-
-
-
-    <!-- FOOTER --> 
+   
     <footer class="footer">
         <div class="container footer-grid">
             <div class="footer-brand">
