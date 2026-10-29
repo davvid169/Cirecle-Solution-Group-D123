@@ -5,7 +5,6 @@
     padding: 0 20px;
 }
 
-
 /* Form Bölümü */
 .guestbook-form-section {
     margin-bottom: 20px;
@@ -31,14 +30,13 @@
     margin-bottom: 25px;
 }
 
-
-
+/* Form Arka Planı (Blue Grey: #799dab) */
 .form-back {
-    background-color: #1e293b;
+    background-color: #799dab;
     padding: 24px;
     border-radius: 16px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
-    border: 1px solid #f1f5f9;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid #6b8d9c;
 }
 
 .form-group {
@@ -50,7 +48,7 @@
 .form-group label {
     font-size: 0.9rem;
     font-weight: 600;
-    color: #334155;
+    color: #ffffff;
     margin-bottom: 6px;
 }
 
@@ -63,12 +61,13 @@
     font-size: 0.95rem;
     color: #1e293b;
     outline: none;
+    background-color: #ffffff;
     box-sizing: border-box;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
-    border-color: #3b82f6;
+    border-color: #1e293b;
 }
 
 .form-group textarea {
@@ -76,22 +75,24 @@
     min-height: 100px;
 }
 
+/* Uzatılmış Gönder Butonu */
 .btn-submit {
-    background-color: #f1f5f9;
+    width: 100%;
+    background-color: #ffffff;
     color: #0f172a;
     border: 1px solid #cbd5e1;
-    padding: 10px 18px;
+    padding: 12px 18px;
     border-radius: 8px;
     font-weight: 600;
+    font-size: 1rem;
     cursor: pointer;
     transition: all 0.2s ease;
+    box-sizing: border-box;
 }
 
 .btn-submit:hover {
-    background-color: #e2e8f0;
+    background-color: #f1f5f9;
 }
-
-
 
 /* --- RESPONSE --- */
 .guestbook-feed-section h2 {
@@ -106,13 +107,13 @@
     gap: 20px;
 }
 
-/* RESPONSE box*/
+/* Response Kartı Arka Planı (Blue: #c7eaf8) */
 .guestbook-card {
-    background-color: #ffffff;
+    background-color: #c7eaf8;
     border-radius: 16px;
     padding: 24px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
-    border: 1px solid #f1f5f9;
+    border: 1px solid #b2dff7;
 }
 
 .card-header {
@@ -128,17 +129,17 @@
 
 .company-name {
     font-size: 0.88rem;
-    color: #64748b;
+    color: #475569;
     display: block;
     margin-top: 2px;
 }
 
-/* message box */
+/* Mesaj İçerik Kutusu (Light Blue Grey: #dcf1f9) */
 .card-body {
-    background-color: #f8fafc;
+    background-color: #dcf1f9;
     border-radius: 12px;
     padding: 20px;
-    border: 1px solid #f1f5f9;
+    border: 1px solid #c8e8f6;
 }
 
 .card-body p {
