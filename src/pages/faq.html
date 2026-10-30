@@ -5,23 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="../css/style.css"> 
    <link rel="stylesheet" href="../css/andr.css"> 
-    <title> FAQ - Circle Solutions </title>
+    <title data-i18n="faq.title"> FAQ - Circle Solutions </title>
 </head>
 <body>
     
     <header class="navbar">
 <div class="nav-container">
 <a href="../index.html" class="logo">
-    <img src="../images/LOGO.png" alt="" class="logo-img">
+    <img src="/images/LOGO.png" alt="" class="logo-img">
 </a>
 
     <nav class="nav-links">
-        <a href="../index.html">Home</a>
-        <a href="../pages/about.html">About us</a>
-        <a href="../pages/solutions.html">Solutions</a>
-        <a href="../pages/contact.html">Contact</a>
-        <a href="../pages/guestbook.php">Guestpage</a>
-        <a href="../pages/faq.html" class="active">FAQ</a>
+        <a href="../index.html" data-i18n="nav.home">Home</a>
+        <a href="../pages/about.html" data-i18n="nav.about">About us</a>
+        <a href="../pages/solutions.html" data-i18n="nav.solutions">Solutions</a>
+        <a href="../pages/contact.php" data-i18n="nav.contact">Contact</a>
+        <a href="../pages/guestbook.php" data-i18n="nav.guestbook">Guestpage</a>
+        <a href="../pages/faq.html" class="active" data-i18n="nav.faq">FAQ</a>
         <br>
 			<div class="lang-switch" role="group" aria-label="Language">
 				<button class="btn-lang" data-lang="en" type="button">EN</button>
@@ -34,50 +34,50 @@
     <main class="faq-main">
     <!-- Title Section -->
     <section class="faq-header">
-      <h1>Frequently asked questions</h1>
-      <p class="subtitle">Frequently asked questions about working with Circle Solutions.</p>
+      <h1 data-i18n="faq.h1">Frequently asked questions</h1>
+      <p class="subtitle" data-i18n="faq.subtitle">Frequently asked questions about working with Circle Solutions.</p>
     </section>
 
     <!-- FAQ cards -->
     <section class="faq-container">
       <div class="faq-card">
-        <h3>What types of software do you build?</h3>
-        <p>We build custom software for companies in logistics, healthcare, and education. We also offer our own platform, Circle D.O.T.S., for internal process management.</p>
+        <h3 data-i18n="faq.q1">What types of software do you build?</h3>
+        <p data-i18n="faq.a1">We build custom software for companies in logistics, healthcare, and education. We also offer our own platform, Circle D.O.T.S., for internal process management.</p>
       </div>
 
       <div class="faq-card">
-        <h3>How does a typical project start?</h3>
-        <p>Every project starts with a discovery session where we get to understand your team, your processes, and your goals. From there we propose an approach and timeline.</p>
+        <h3 data-i18n="faq.q2">How does a typical project start?</h3>
+        <p data-i18n="faq.a2">Every project starts with a discovery session where we get to understand your team, your processes, and your goals. From there we propose an approach and timeline.</p>
       </div>
 
       <div class="faq-card">
-        <h3>Do you work with companies outside the Netherlands?</h3>
-        <p>Yes. We work with clients in the Netherlands, Belgium, and Germany, and are open to international projects.</p>
+        <h3 data-i18n="faq.q3">Do you work with companies outside the Netherlands?</h3>
+        <p data-i18n="faq.a3">Yes. We work with clients in the Netherlands, Belgium, and Germany, and are open to international projects.</p>
       </div>
 
       <div class="faq-card">
-        <h3>What happens after the software is delivered?</h3>
-        <p>We offer ongoing support and maintenance contracts. We believe good software is a long-term relationship, not a one-off delivery.</p>
+        <h3 data-i18n="faq.q4">What happens after the software is delivered?</h3>
+        <p data-i18n="faq.a4">We offer ongoing support and maintenance contracts. We believe good software is a long-term relationship, not a one-off delivery.</p>
       </div>
 
       <div class="faq-card">
-        <h3>Can you integrate with our existing systems?</h3>
-        <p>In most cases, yes. Integration with existing tools and databases is a standard part of how we work.</p>
+        <h3 data-i18n="faq.q5">Can you integrate with our existing systems?</h3>
+        <p data-i18n="faq.a5">In most cases, yes. Integration with existing tools and databases is a standard part of how we work.</p>
       </div>
 
       <div class="faq-card">
-        <h3>How long does a project typically take?</h3>
-        <p>This depends on the scope. Smaller projects may take 2–3 months; larger ones 6–12 months. We always give you a clear timeline after the discovery phase.</p>
+        <h3 data-i18n="faq.q6">How long does a project typically take?</h3>
+        <p data-i18n="faq.a6">This depends on the scope. Smaller projects may take 2–3 months; larger ones 6–12 months. We always give you a clear timeline after the discovery phase.</p>
       </div>
     </section>
 
     <!-- Dark Blue Callout Box -->
     <section class="faq-contact-box">
       <div class="contact-box-content">
-        <h2>Do you have any other questions?</h2>
-        <p>Choose the channel that works best for you and contact us. We'll get back to you within 24 hours at the latest.</p>
+        <h2 data-i18n="faq.box.h2">Do you have any other questions?</h2>
+        <p data-i18n="faq.box.p">Choose the channel that works best for you and contact us. We'll get back to you within 24 hours at the latest.</p>
       </div>
-      <a href="contact.html" class="contact-box-btn" aria-label="Contact us">
+      <a href="contact.php" class="contact-box-btn" aria-label="Contact us">
         <span>&#x2197;</span> <!-- Up-right arrow icon -->
       </a>
     </section>
@@ -100,7 +100,7 @@
           <li><a href="about.html">About us</a></li>
           <li><a href="solutions.html">Solutions</a></li>
           <li><a href="guestbook.php">Guestbook</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.php">Contact</a></li>
           <li><a href="faq.html">FAQ</a></li>
         </ul>
       </div>
@@ -129,6 +129,8 @@
       </div>
     </div>
   </footer>
+
+	<script src="../js/lang.js"></script>
 
   </body>
   </html>

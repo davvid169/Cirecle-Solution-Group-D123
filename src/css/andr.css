@@ -1,6 +1,5 @@
-/* ==========================================
-   ABOUT US PAGE START
-   ========================================== */
+/*ABOUT US PAGE START*/
+
 .page-header {
     text-align: center;
     margin-top: 40px;
@@ -33,9 +32,9 @@
 }
 
 
-/* ========================================== */
-/* HISTORY TIMELINE SECTION                   */
-/* ========================================== */
+
+/* HISTORY TIMELINE SECTION */
+
 .history-timeline {
   max-width: 1280px;
   margin: 0 auto;
@@ -47,7 +46,7 @@
   margin-bottom: 30px;
 }
 
-/* The horizontal grey line running across */
+/* The horizontal grey line */
 .timeline-line {
   position: absolute;
   top: 6px;
@@ -58,7 +57,6 @@
   z-index: 1;
 }
 
-/* 4-column layout so dots match the text grid below perfectly */
 .timeline-dots {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -72,7 +70,7 @@
   background-color: #34505B;
   border-radius: 50%;
   border: 2px solid #ffffff;
-  justify-self: start; /* Aligns dot perfectly with the column text */
+  justify-self: start; 
 }
 
 /* 4-column grid for the text milestones */
@@ -96,9 +94,9 @@
   line-height: 1.6;
 }
 
-/* ========================================== */
-/* STATS BANNER SECTION (#799DAB)             */
-/* ========================================== */
+
+/* STATS BANNER SECTION */
+
 .stats-banner {
   background-color: #799DAB;
   width: 100%;
@@ -129,9 +127,9 @@
   font-weight: 400;
 }
 
-/* ========================================== */
+
 /* WHY ARE WE DIFFERENT SECTION               */
-/* ========================================== */
+
 .why-different {
   position: relative;
   max-width: 1280px;
@@ -140,7 +138,7 @@
   overflow: hidden;
 }
 
-/* Master container splitting into 2 equal columns */
+
 .why-container {
   position: relative;
   z-index: 1;
@@ -182,7 +180,7 @@
   min-height: 100px;
 }
 
-/* Automatically places a soft #0A94C9 (14% opacity) gradient circle behind EACH badge */
+
 .badge-item::before {
   content: '';
   position: absolute;
@@ -198,7 +196,7 @@
   z-index: 0;
 }
 
-/* Ensures the text and borders sit cleanly ON TOP of the gradient glow */
+
 .badge-item > * {
   position: relative;
   z-index: 1;
@@ -256,14 +254,10 @@
   color: #34505B;
 }
 
-/* ==========================================
-   ABOUT US PAGE END
-   ========================================== */
+/* ABOUT US PAGE END */
 
 
-/* ==========================================
-   FAQ PAGE START
-   ========================================== */
+/* FAQ PAGE START */
 
 .faq-main {
   max-width: 900px;
@@ -367,5 +361,5 @@
 .contact-box-btn:hover {
   background-color: #ffffff;
   color: #054963;
-  transform: scale(1.05);
+  transform: scale(1);
 }

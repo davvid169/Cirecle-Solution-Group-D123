@@ -139,6 +139,12 @@ top: -15px;
 display: block;
 }
 
+.hero-container span[data-i18n="home.hero.tagline"] {
+    position: relative;
+    top: -15px; /* Adjust this number to move it higher or lower */
+    display: block;
+}
+
 .sub-title {
 font-size: 0.75rem;
 letter-spacing: 1.5px;
@@ -161,8 +167,8 @@ margin-bottom: 30px;
 }
 
 .hero-buttons {
-display: flex;
-gap: 20px;
+  display: flex;
+  gap: 20px;
 }
 
 .btn {
@@ -187,14 +193,14 @@ display: inline-block;
 }
 
 .btn-circle-wrapper svg {
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-60%, -40%);
-width: 150%;
-height: auto;
-pointer-events: none;
-z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-60%, -40%);                     
+    width: 150%;
+    height: auto;
+    pointer-events: none;
+    z-index: 1;
 }
 
 .btn-circle-wrapper .btn {
@@ -288,15 +294,15 @@ color: #334155;
 /* --- QUOTE SECTION --- */
 
 .quote-container {
-position: relative;
-width: 100%;
-min-height: 600px;
-display: flex;
-justify-content: center;
-align-items: center;
-overflow: hidden;
-padding: 80px 0;
-background-color: rgb(220 241 249 );
+    position: relative;
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 80px 0;
+    background-color: rgb(220 241 249 );
 }
 /* --- common--- */
 .quote-container .circle {
@@ -654,12 +660,12 @@ white-space: nowrap;
 
 
 .image-pill-sol {
-position: relative;
-height: 300px;
-border-radius: 200px;
-overflow: hidden;
-width: 100%;
-margin-left: 50px;
+  position: relative;
+  height: 300px;
+  border-radius: 200px;
+  overflow: hidden;
+  width: 100%;
+  margin-left: 50px;
 }
 
 .image-pill__img-sol {
