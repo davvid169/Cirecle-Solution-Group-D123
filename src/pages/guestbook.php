@@ -298,7 +298,7 @@ minlength="10" maxlength="500"><?php echo isset($_POST['message']) ? htmlspecial
                     <div class="form-group">
                         <label for="companyname">Company Name :</label>
                         <br>
-                        <!-- Forbidden: ?, !, /, \, {}, [], <>, *, =, % -->
+                        <!-- Forbidden ?, !, /, \, {}, [], <>, *, =, % -->
                         <input type="text" id="companyname" name="companyname" placeholder="Circle Solutions..." 
                                minlength="3" maxlength="100" 
                                value="<?php echo isset($_POST['companyname']) ? htmlspecialchars($_POST['companyname']) : ''; ?>">
