@@ -218,11 +218,15 @@
 }
 
 /* Hand-drawn look circle for "Online Support" badge */
-.badge-item.circled {
-  border: 2px solid #054963;
-  border-radius: 50%;
-  padding: 15px 25px;
+.btn-circle-wrapper svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-54%, -45%);
+    width: 150%;
+    height: auto;
 }
+
 
 /* --- RIGHT COLUMN STYLES (White Cards) --- */
 .why-right {

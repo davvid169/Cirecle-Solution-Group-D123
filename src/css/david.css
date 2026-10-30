@@ -58,12 +58,11 @@
 
 .right-box{
     flex: 1;
-    border: 2px solid black;
     height: auto;
     padding: 20px;
     border-radius: 20px;
     margin: 60px;
-    background-color: #799DAB;
+    background-color: #799dab;
 }
 
 .form-box{
@@ -74,12 +73,13 @@
 
 .form-header h2{
     margin: 0;
-    color: #2A3F4A;
+    color: white;
 }
 
 .form-header p{
     margin: 0;
     font-size: 12px;
+    color: white;
 }
 
 .field{
@@ -92,13 +92,12 @@
     font-size: 12px;
     font-weight: bold;
     text-transform: uppercase;
-    color: #2A3F4A;
+    color: white;
 }
 
 .field input, textarea{
      font-family: inherit;
     width: 100%;
-    border: 1px solid black;
     border-radius: 8px;
     padding: 12px;
     background-color: white;
@@ -124,3 +123,71 @@
 .form-box button:hover{
     background-color: #079ccb;
 }
+
+.body-result{
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: aliceblue;
+}
+
+.errors{
+    background-color: white;
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 20px;
+    border: 4px solid darkred;
+    
+
+    h3, h3{
+        color:#093546;
+    }
+
+    p{
+        color: grey;
+    }
+
+    a{
+        display: inline-block;
+        background-color: #093546;
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        padding: 10px;
+    }
+}
+
+.answer{
+     background-color: white;
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 20px;
+    border: 4px solid darkgreen;
+    
+
+    h3, h3{
+        color:#093546;
+    }
+
+    p{
+        color: grey;
+    }
+
+    a{
+        display: inline-block;
+        background-color: #093546;
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        padding: 10px;
+    }
+}
+
