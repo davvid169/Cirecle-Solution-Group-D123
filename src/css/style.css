@@ -79,7 +79,7 @@ ul {
   padding: 12px 20px;
   
 }
-/ --- lANGUAGE SWITCH --- */
+/* --- lANGUAGE SWITCH --- */
 .lang-switch {
   display: inline-flex;
   align-items: center;
@@ -318,7 +318,7 @@ ul {
   margin-top: 20px;
   display: flex;
   flex-direction: column;  
-  align-items: flex-end;   
+  align-items: center;   
   text-align: right;
 }
 
