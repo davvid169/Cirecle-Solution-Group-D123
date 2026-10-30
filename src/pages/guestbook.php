@@ -402,5 +402,7 @@ minlength="10" maxlength="500"><?php echo isset($_POST['message']) ? htmlspecial
     </div>
   </footer>
 
+  	 <script src="../js/lang.js"></script>
+
 </body>
 </html>
