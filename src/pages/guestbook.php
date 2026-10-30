@@ -89,7 +89,7 @@ $messages = $_SESSION['guestbook_messages'];
 <a href="../index.html">Home</a>
 <a href="about.html">About us</a>
 <a href="solutions.html">Solutions</a>
-<a href="contact.html">Contact</a>
+<a href="contact.php">Contact</a>
 <a href="guestbook.php" class="active">Guestbook</a>
 <a href="faq.html">FAQ</a>
 <br>
@@ -206,12 +206,12 @@ minlength="10" maxlength="500"><?php echo isset($_POST['message']) ? htmlspecial
 <div class="footer-col">
 <h4>Company</h4>
 <ul>
-<li data-i18n="nav.home"><a href="../index.html">Home</a></li>
-<li data-i18n="nav.about"><a href="about.html">About us</a></li>
-<li data-i18n="nav.solutions"><a href="solutions.html">Solutions</a></li>
-<li data-i18n="nav.guestbook"><a href="guestbook.php">Guestbook</a></li>
-<li data-i18n="nav.contact"><a href="contact.html">Contact</a></li>
-<li data-i18n="nav.faq"><a href="faq.html">FAQ</a></li>
+<li><a href="../index.html">Home</a></li>
+<li><a href="about.html">About us</a></li>
+<li><a href="solutions.html">Solutions</a></li>
+<li><a href="guestbook.php">Guestpage</a></li>
+<li><a href="contact.php">Contact</a></li>
+<li><a href="faq.html">FAQ</a></li>
 </ul>
 </div>
 <div class="footer-col">
