@@ -338,7 +338,7 @@ ul {
   margin-top: 20px;
   display: flex;
   flex-direction: column;  
-  align-items: flex-end;   
+  align-items: center;   
   text-align: right;
 }
 
