@@ -93,7 +93,10 @@ $messages = $_SESSION['guestbook_messages'];
 <a href="guestbook.php" class="active">Guestbook</a>
 <a href="faq.html">FAQ</a>
 <br>
-<button class="btn-lang"> NL | EN </button>
+	<div class="lang-switch" role="group" aria-label="Language">
+		<button class="btn-lang" data-lang="en" type="button">EN</button>
+		<button class="btn-lang" data-lang="nl" type="button">NL</button>
+	</div>
 </nav>
 </div>
 </header>
