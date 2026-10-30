@@ -134,65 +134,7 @@
     margin: 0;
     margin-left: 4px;
 }
-<<<<<<< HEAD
 
-.errors{
-    background-color: white;
-    border-radius: 20px;
-    padding: 40px;
-    max-width: 500px;
-    width: 100%;
-    text-align: center;
-    box-shadow: 0 4px 20px;
-    border: 4px solid darkred;
-    
-
-    h3, h3{
-        color:#093546;
-    }
-
-    p{
-        color: grey;
-    }
-
-    a{
-        display: inline-block;
-        background-color: #093546;
-        color: white;
-        text-decoration: none;
-        border-radius: 8px;
-        padding: 10px;
-    }
-}
-
-.answer{
-     background-color: white;
-    border-radius: 20px;
-    padding: 40px;
-    max-width: 500px;
-    width: 100%;
-    text-align: center;
-    box-shadow: 0 4px 20px;
-    border: 4px solid darkgreen;
-    
-
-    h3, h3{
-        color:#093546;
-    }
-
-    p{
-        color: grey;
-    }
-
-    a{
-        display: inline-block;
-        background-color: #093546;
-        color: white;
-        text-decoration: none;
-        border-radius: 8px;
-        padding: 10px;
-    }
-}
 @media (max-width: 900px) {
     .contact-form {
         gap: 20px;
@@ -276,7 +218,7 @@ Plak dit onderaan guestbook.css:
 /* RESPONSIVE GUESTBOOK */
 
 @media (max-width: 900px) {
-    .main-guestbook-layout {
+    .main-guestbook-layout{
         max-width: 100%;
         padding: 0 25px;
     }
@@ -356,5 +298,3 @@ Plak dit onderaan guestbook.css:
         box-sizing: border-box;
     }
 }
-=======
->>>>>>> ffa94b136826941bd489ae668685e7babde1c4c0
