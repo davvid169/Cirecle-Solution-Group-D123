@@ -164,7 +164,7 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 600px){
     .main-guestbook-layout {
         margin: 25px auto;
         padding: 0 15px;
@@ -175,7 +175,7 @@
     }
 
     .subtitle-text {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 
     .form-back {
