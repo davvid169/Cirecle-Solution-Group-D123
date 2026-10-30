@@ -198,7 +198,7 @@ minlength="10" maxlength="500"><?php echo isset($_POST['message']) ? htmlspecial
 <div class="container footer-grid">
 <div class="footer-brand">
 <div class="logo light">
-<span class="logo-icon"></span><img src="../images/LOGO.png" alt="">
+<span class="logo-icon"></span><img src="/images/LOGO.png" alt="">
 </div>
 <p>Custom software for logistics, healthcare, and education. <br>Founded in Amersfoort, 2005.</p>
 </div>
@@ -238,4 +238,8 @@ minlength="10" maxlength="500"><?php echo isset($_POST['message']) ? htmlspecial
 </div>
 </div>
 </footer>
-    
+
+<script src="../js/lang.js"></script>
+
+</body>
+</html>
