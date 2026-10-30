@@ -371,6 +371,10 @@ function setLanguage(lang) {
     const text = translations[lang][el.dataset.i18nHtml];
     if (text) el.innerHTML = text;
   });
+  document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
+    const text = translations[lang][el.dataset.i18nPlaceholder];
+    if (text) el.placeholder = text;
+  });
   document.documentElement.lang = lang;
   document.querySelectorAll(".btn-lang").forEach(btn => {
     const isActive = btn.dataset.lang === lang;
