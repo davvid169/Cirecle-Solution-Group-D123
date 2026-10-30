@@ -656,6 +656,7 @@ border: 2px solid #079CCB;
   border-radius: 200px;
   overflow: hidden;
   width: 100%;
+  margin-left: 50px;
 }
 
 .image-pill__img-sol {
