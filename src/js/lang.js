@@ -5,7 +5,7 @@ const translations = {
         "nav.about": "About us",
         "nav.solutions": "Solutions",
         "nav.contact": "Contact",
-        "nav.guestpage": "Guestpage",
+        "nav.guestpage": "Guestbook",
         "nav.faq": "FAQ",
 
         /* ---------- FOOTER ---------- */
