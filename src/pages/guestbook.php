@@ -76,6 +76,7 @@ $messages = $_SESSION['guestbook_messages'];
 
 <link rel="stylesheet" href="../css/style.css">
 <link rel="stylesheet" href="../css/guestbook.css">
+<link rel="stylesheet" href="../css/responsive.css">
 </head>
 
 <body>
@@ -84,7 +85,18 @@ $messages = $_SESSION['guestbook_messages'];
 <a href="../index.html" class="logo">
 <img src="../images/LOGO.png" alt="Logo" class="logo-img">
 </a>
+	<input
+	 type="checkbox"
+	 id="menu-toggle"
+	 class="menu-toggle"
+    >
 
+		<label for="menu-toggle" class="menu-button">
+			<span></span>
+			<span></span>
+			<span></span>
+		</label>
+	
 <nav class="nav-links">
 <a href="../index.html">Home</a>
 <a href="about.html">About us</a>

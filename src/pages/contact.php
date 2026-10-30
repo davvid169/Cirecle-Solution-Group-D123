@@ -48,6 +48,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <title data-i18n="contact.title">Contact - Circle Solutions</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/david.css">
+    <link rel="stylesheet" href="../css/responsive.css">
 </head>
 <body>
         <!-- NAVBAR -->
@@ -56,7 +57,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <a href="../index.html" class="logo">
         <img src="../images/LOGO.png" alt="" class="logo-img">
     </a>
+	<input
+	 type="checkbox"
+	 id="menu-toggle"
+	 class="menu-toggle"
+    >
 
+		<label for="menu-toggle" class="menu-button">
+			<span></span>
+			<span></span>
+			<span></span>
+		</label>
+	
         <nav class="nav-links">
             <a href="../index.html" data-i18n="nav.home">Home</a>
             <a href="../pages/about.html" data-i18n="nav.about">About us</a>

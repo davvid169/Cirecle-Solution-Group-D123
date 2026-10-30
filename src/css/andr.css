@@ -363,3 +363,87 @@
   color: #054963;
   transform: scale(1);
 }
+@media (max-width: 900px) {
+    .history-intro {
+        padding: 0 30px;
+    }
+
+    .history-timeline {
+        padding: 30px;
+    }
+
+    .timeline-grid {
+        gap: 20px;
+    }
+
+    .stats-container {
+        padding: 0 30px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .why-different {
+        padding: 40px 30px;
+    }
+
+    .why-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .faq-main {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .page-header {
+        margin: 30px 0;
+    }
+
+    .page-header h1 {
+        font-size: 32px;
+    }
+
+    .history-intro {
+        padding: 0 20px;
+    }
+
+    .history-intro h2 {
+        font-size: 25px;
+    }
+
+    .history-intro p {
+        font-size: 16px;
+    }
+
+    .history-timeline {
+        padding: 30px 20px;
+    }
+
+    .timeline-track {
+        display: none;
+    }
+@media (max-width: 600px) {
+    .about-main,
+    .faq-main,
+    .history-timeline,
+    .history-intro,
+    .why-different,
+    .faq-container {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    .timeline-grid,
+    .why-container,
+    .stats-container {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .faq-card,
+    .timeline-item {
+        min-width: 0;
+        overflow-wrap: anywhere;
+    }
+}

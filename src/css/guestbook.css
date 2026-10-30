@@ -156,3 +156,71 @@
     color: #94a3b8;
     border: 1px solid #f1f5f9;
 }
+
+@media (max-width: 900px) {
+    .main-guestbook-layout {
+        max-width: 100%;
+        padding: 0 25px;
+    }
+}
+
+@media (max-width: 600px) {
+    .main-guestbook-layout {
+        margin: 25px auto;
+        padding: 0 15px;
+    }
+
+    .guestbook-form-section h1 {
+        font-size: 1.7rem;
+    }
+
+    .subtitle-text {
+        font-size: 0.9rem;
+    }
+
+    .form-back {
+        padding: 18px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .guestbook-card {
+        padding: 15px;
+    }
+
+    .card-body {
+        padding: 15px;
+    }
+
+    .card-body p {
+        text-align: left;
+        overflow-wrap: anywhere;
+    }
+
+    .details h3,
+    .company-name {
+        overflow-wrap: anywhere;
+    }
+
+    .guestbook-feed-section h2 {
+        font-size: 1.3rem;
+    }
+    @media (max-width: 600px) {
+    .main-guestbook-layout,
+    .form-back,
+    .guestbook-card,
+    .card-body {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
+    .card-body p {
+        overflow-wrap: anywhere;
+    }
+}
