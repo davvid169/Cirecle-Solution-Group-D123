@@ -58,12 +58,11 @@
 
 .right-box{
     flex: 1;
-    border: 2px solid black;
     height: auto;
     padding: 20px;
     border-radius: 20px;
     margin: 60px;
-    background-color: #799DAB;
+    background-color: #799dab;
 }
 
 .form-box{
@@ -74,12 +73,13 @@
 
 .form-header h2{
     margin: 0;
-    color: #2A3F4A;
+    color: white;
 }
 
 .form-header p{
     margin: 0;
     font-size: 12px;
+    color: white;
 }
 
 .field{
@@ -92,13 +92,12 @@
     font-size: 12px;
     font-weight: bold;
     text-transform: uppercase;
-    color: #2A3F4A;
+    color: white;
 }
 
 .field input, textarea{
      font-family: inherit;
     width: 100%;
-    border: 1px solid black;
     border-radius: 8px;
     padding: 12px;
     background-color: white;
