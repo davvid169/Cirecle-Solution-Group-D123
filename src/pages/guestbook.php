@@ -72,7 +72,7 @@ $messages = $_SESSION['guestbook_messages'];
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title data-i18n="guest.title">Guestbook - Circle Solutions</title>
+<title>Guestpage - Circle Solutions</title>
 
 <link rel="stylesheet" href="../css/style.css">
 <link rel="stylesheet" href="../css/guestbook.css">
