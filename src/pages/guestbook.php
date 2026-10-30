@@ -89,7 +89,7 @@ $messages = $_SESSION['guestbook_messages'];
 <a href="../index.html">Home</a>
 <a href="about.html">About us</a>
 <a href="solutions.html">Solutions</a>
-<a href="contact.html">Contact</a>
+<a href="contact.php">Contact</a>
 <a href="guestbook.php" class="active">Guestbook</a>
 <a href="faq.html">FAQ</a>
 <br>
@@ -209,7 +209,7 @@ minlength="10" maxlength="500"><?php echo isset($_POST['message']) ? htmlspecial
 <li><a href="about.html">About us</a></li>
 <li><a href="solutions.html">Solutions</a></li>
 <li><a href="guestbook.php">Guestpage</a></li>
-<li><a href="contact.html">Contact</a></li>
+<li><a href="contact.php">Contact</a></li>
 <li><a href="faq.html">FAQ</a></li>
 </ul>
 </div>
