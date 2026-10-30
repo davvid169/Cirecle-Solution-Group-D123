@@ -108,7 +108,8 @@
     resize: vertical;
 }
 
-.form-box button{
+.emailto{
+    align-items: center;
     background-color: #093546;
     color: white;
     padding: 14px;
@@ -120,7 +121,7 @@
     cursor: pointer;
 }
 
-.form-box button:hover{
+.emailto:hover{
     background-color: #079ccb;
 }
 
