@@ -1,11 +1,10 @@
-/* --- GENEL DÜZEN --- */
 .main-guestbook-layout {
     max-width: 800px;
     margin: 40px auto;
     padding: 0 20px;
 }
 
-/* Form Bölümü */
+/* Form */
 .guestbook-form-section {
     margin-bottom: 20px;
 }
@@ -30,7 +29,7 @@
     margin-bottom: 25px;
 }
 
-/* Form Arka Planı (Blue Grey: #799dab) */
+
 .form-back {
     background-color: #799dab;
     padding: 24px;
@@ -75,7 +74,7 @@
     min-height: 100px;
 }
 
-/* Gönder Butonu */
+/* submit */
 .btn-submit {
     width: 100%;
     background-color: #1e293b;
@@ -107,7 +106,7 @@
     gap: 20px;
 }
 
-/* Response  */
+
 .guestbook-card {
     background-color: #c7eaf8;
     border-radius: 16px;
@@ -139,7 +138,7 @@
     background-color: #dcf1f9;
     border-radius: 12px;
     padding: 20px;
-    border: 1px solid #bce1f1; /* Arka plan rengine yakın, daha belirgin ince çerçeve */
+    border: 1px solid #bce1f1; 
 }
 
 .card-body p {
