@@ -5,7 +5,7 @@ const translations = {
         "nav.about": "About us",
         "nav.solutions": "Solutions",
         "nav.contact": "Contact",
-        "nav.guestpage": "Guestpage",
+        "nav.guestpage": "Guestbook",
         "nav.faq": "FAQ",
 
         /* ---------- FOOTER ---------- */
@@ -169,15 +169,31 @@ const translations = {
         "terms.h1": "Terms & Conditions",
         "terms.subtitle": "These terms explain the rules for using the Circle Solutions website. By using the website, you agree to these terms.",
         "terms.c1.h2": "Website information",
-        "terms.c1.p": "We aim to keep the information on this website accurate and current, but it is provided for general information only. Website content does not constitute a binding offer, professional advice, or a software services agreement.",
+        "terms.c1.p": "We do our best to keep the information on this website correct and up to date, but it is meant as general information only. Nothing on this website is a binding offer or price quote. Every software project is agreed in a separate written contract.",
         "terms.c2.h2": "Intellectual property",
-        "terms.c2.p": "The Circle Solutions name, logo, visual identity, website copy, and other original materials belong to Circle Solutions B.V. unless stated otherwise. You may view and download the website PDF for personal or internal business use, but may not reproduce or distribute it commercially without written permission.",
-        "terms.c3.h2": "Acceptable use",
-        "terms.c3.p": "You may not misuse this website, attempt unauthorised access, interfere with its operation, or use its content in a way that infringes the rights of Circle Solutions or others. Guestbook contributions must be lawful, relevant, and respectful.",
+        "terms.c2.p": "The Circle Solutions name, logo, Circle D.O.T.S., images, texts and brochure belong to Circle Solutions B.V. You may view and download the brochure for personal use or for use inside your own organisation. You may not copy, sell or publish our content without written permission.",
+        "terms.c3.h2": "Acceptable use and guestbook",
+        "terms.c3.p": "You may not misuse this website, try to get unauthorised access, or disrupt it with spam or automated messages. Guestbook messages must be honest, respectful and relevant. We may remove messages that don’t follow these rules without notice.",
         "terms.c4.h2": "Liability and governing law",
-        "terms.c4.p": "To the extent permitted by law, Circle Solutions is not liable for loss arising solely from reliance on this website or from temporary unavailability. These terms are governed by Dutch law. Questions can be sent to",
+        "terms.c4.p": "As far as the law allows, Circle Solutions is not responsible for damage caused by using this website or by the website being temporarily unavailable. These terms are governed by Dutch law. Questions? Email us at",
         "terms.back": "Back to Home",
-        "terms.contact": "Contact us"
+        "terms.contact": "Contact us",
+
+        /* ---------- GUESTBOOK ---------- */
+        "guest.title": "Guestbook - Circle Solutions",
+        "guest.subtitle": "Guestbook",
+        "guest.h1": "Share your experience",
+        "guest.p": "Worked with Circle Solutions? Leave a note for our team in the guestbook.",
+        "guest.form.name": "Your Name :",
+        "guest.form.company": "Company Name :",
+        "guest.form.message": "Your Message (10 - 500 characters):",
+        "guest.form.name.placeholder": "Sarah Klein..",
+        "guest.form.company.placeholder": "Circle Solutions...",
+        "guest.form.message.placeholder": "Share your experience with us...",
+        "guest.form.submit": "Sign the guestbook",
+        "guest.success": "Thank you! Your message has been successfully posted.",
+        "guest.empty": "No messages yet. Be the first to share your experience!",
+        "guest.delete.confirm": "Are you sure you want to delete this message?"
     },
 
     nl: {
@@ -350,15 +366,31 @@ const translations = {
         "terms.h1": "Algemene voorwaarden",
         "terms.subtitle": "Deze voorwaarden leggen de regels uit voor het gebruik van de website van Circle Solutions. Door de website te gebruiken, ga je akkoord met deze voorwaarden.",
         "terms.c1.h2": "Website-informatie",
-        "terms.c1.p": "Wij streven ernaar de informatie op deze website juist en actueel te houden, maar deze wordt uitsluitend ter algemene informatie verstrekt. De inhoud van de website vormt geen bindend aanbod, professioneel advies of overeenkomst voor softwarediensten.",
+        "terms.c1.p": "We doen ons best om de informatie op deze website juist en actueel te houden, maar deze is alleen bedoeld als algemene informatie. Niets op deze website is een bindend aanbod of een prijsopgave. Elk softwareproject wordt vastgelegd in een apart schriftelijk contract.",
         "terms.c2.h2": "Intellectueel eigendom",
-        "terms.c2.p": "De naam Circle Solutions, het logo, de visuele identiteit, de websiteteksten en ander origineel materiaal zijn eigendom van Circle Solutions B.V., tenzij anders vermeld. Je mag de website-pdf bekijken en downloaden voor persoonlijk of intern zakelijk gebruik, maar mag deze zonder schriftelijke toestemming niet commercieel reproduceren of verspreiden.",
-        "terms.c3.h2": "Toegestaan gebruik",
-        "terms.c3.p": "Je mag deze website niet misbruiken, geen onbevoegde toegang proberen te krijgen, de werking niet verstoren en de inhoud niet gebruiken op een manier die inbreuk maakt op de rechten van Circle Solutions of anderen. Bijdragen aan het gastenboek moeten rechtmatig, relevant en respectvol zijn.",
+        "terms.c2.p": "De naam Circle Solutions, het logo, Circle D.O.T.S., afbeeldingen, teksten en de brochure zijn eigendom van Circle Solutions B.V. Je mag de brochure bekijken en downloaden voor persoonlijk gebruik of gebruik binnen je eigen organisatie. Je mag onze content niet kopiëren, verkopen of publiceren zonder schriftelijke toestemming.",
+        "terms.c3.h2": "Toegestaan gebruik en gastenboek",
+        "terms.c3.p": "Je mag deze website niet misbruiken, geen onbevoegde toegang proberen te krijgen en de site niet verstoren met spam of geautomatiseerde berichten. Gastenboekberichten moeten eerlijk, respectvol en relevant zijn. Berichten die zich niet aan deze regels houden, kunnen we zonder waarschuwing verwijderen.",
         "terms.c4.h2": "Aansprakelijkheid en toepasselijk recht",
-        "terms.c4.p": "Voor zover wettelijk toegestaan is Circle Solutions niet aansprakelijk voor schade die uitsluitend voortvloeit uit het vertrouwen op deze website of uit tijdelijke onbeschikbaarheid. Op deze voorwaarden is Nederlands recht van toepassing. Vragen kunnen worden gestuurd naar",
+        "terms.c4.p": "Voor zover de wet het toestaat, is Circle Solutions niet verantwoordelijk voor schade door het gebruik van deze website of doordat de website tijdelijk niet beschikbaar is. Op deze voorwaarden is Nederlands recht van toepassing. Vragen? Mail ons via",
         "terms.back": "Terug naar home",
-        "terms.contact": "Neem contact op"
+        "terms.contact": "Neem contact op",
+
+        /* ---------- GUESTBOOK ---------- */
+        "guest.title": "Gastenboek - Circle Solutions",
+        "guest.subtitle": "Gastenboek",
+        "guest.h1": "Deel je ervaring",
+        "guest.p": "Samengewerkt met Circle Solutions? Laat een bericht achter voor ons team in het gastenboek.",
+        "guest.form.name": "Je naam :",
+        "guest.form.company": "Bedrijfsnaam :",
+        "guest.form.message": "Je bericht (10 - 500 tekens):",
+        "guest.form.name.placeholder": "Sarah Klein..",
+        "guest.form.company.placeholder": "Circle Solutions...",
+        "guest.form.message.placeholder": "Deel je ervaring met ons...",
+        "guest.form.submit": "Onderteken het gastenboek",
+        "guest.success": "Bedankt! Je bericht is succesvol geplaatst.",
+        "guest.empty": "Nog geen berichten. Wees de eerste die zijn ervaring deelt!",
+        "guest.delete.confirm": "Weet je zeker dat je dit bericht wilt verwijderen?"
     }
 };
 
@@ -370,6 +402,10 @@ function setLanguage(lang) {
   document.querySelectorAll("[data-i18n-html]").forEach(el => {
     const text = translations[lang][el.dataset.i18nHtml];
     if (text) el.innerHTML = text;
+  });
+  document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
+    const text = translations[lang][el.dataset.i18nPlaceholder];
+    if (text) el.placeholder = text;
   });
   document.documentElement.lang = lang;
   document.querySelectorAll(".btn-lang").forEach(btn => {

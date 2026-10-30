@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Circle Solutions</title>
+    <title data-i18n="privacy.title">Privacy Policy - Circle Solutions</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/privacy.css">
 </head>
@@ -12,18 +12,21 @@
      <header class="navbar">
 <div class="nav-container">
 <a href="pages/index.html" class="logo">
-    <img src="../images/LOGO.png" alt="" class="logo-img">
+    <img src="/images/LOGO.png" alt="" class="logo-img">
 </a>
 
     <nav class="nav-links">
-        <a href="../index.html">Home</a>
-        <a href="../pages/about.html">About us</a>
-        <a href="../pages/solutions.html">Solutions</a>
-        <a href="../pages/contact.html">Contact</a>
-        <a href="../pages/guestbook.php">Guestpage</a>
-        <a href="../pages/faq.html">FAQ</a>
+        <a href="../index.html" data-i18n="nav.home">Home</a>
+        <a href="../pages/about.html" data-i18n="nav.about">About us</a>
+        <a href="../pages/solutions.html" data-i18n="nav.solutions">Solutions</a>
+        <a href="../pages/contact.php" data-i18n="nav.contact">Contact</a>
+        <a href="../pages/guestbook.php" data-i18n="nav.guestbook">Guestbook</a>
+        <a href="../pages/faq.html" data-i18n="nav.faq">FAQ</a>
         <br>
-        <button class="btn-lang"> NL | EN </button>
+		<div class="lang-switch" role="group" aria-label="Language">
+			<button class="btn-lang" data-lang="en" type="button">EN</button>
+			<button class="btn-lang" data-lang="nl" type="button">NL</button>
+		</div>
 </nav>
 </div>
      </header>
@@ -34,7 +37,7 @@
         <header class="privacy-header">
             <h1>Privacy policy</h1>
             <p class="subtitle">
-                We believe privacy should be simple and understandable. This policy explains what this website stores and how you can contact us about your data.
+				We believe privacy should be simple and understandable. This policy explains which data this website collects, why we need it and what your rights are.
             </p>
         </header>
 
@@ -44,32 +47,32 @@
             <article class="card">
                 <h2>Who we are</h2>
                 <p>
-                    Circle Solutions B.V. is a custom software company based in Amersfoort, the Netherlands. For privacy questions, contact us at 
+					Circle Solutions B.V. is a custom software company based in Amersfoort, the Netherlands. We are responsible for the personal data collected through this website. For privacy questions, contact us at info@circlesolutions.com.
                     <a href="hi@circlesolutions.com">hi@circlesolutions.com</a>.
                 </p>
             </article>
 
             <!-- 2 -->
             <article class="card">
-                <h2>Information on this website</h2>
+                <h2>What data we collect</h2>
                 <p>
-                    This website does not use advertising cookies or analytics trackers. Your language preference and any guestbook entry you submit are stored locally in your browser. The contact form shown on this website does not currently transmit or store its contents.
+					We only collect the data you give us yourself. Through the contact form we receive your name, email address and message, which we use to answer your question. Through the guestbook we receive your name, company name and message, which are shown on the guestbook page.
                 </p>
             </article>
 
             <!-- 3 -->
             <article class="card">
-                <h2>Local storage and guestbook</h2>
+                <h2>Cookies and storage</h2>
                 <p>
-                    Language preferences and guestbook entries remain on your device through browser localStorage. You can remove them at any time by clearing this site's browser data. Do not include confidential or sensitive personal information in a guestbook entry.
+					This website does not use advertising cookies or analytics trackers. A session cookie keeps the guestbook working during your visit, and your language choice (EN or NL) is saved in your browser. You can remove both at any time by clearing your browser data.
                 </p>
             </article>
 
             <!-- Kart 4 -->
             <article class="card">
-                <h2>Contact and your rights</h2>
+                <h2>Your rights</h2>
                 <p>
-                    If you contact us directly by email or phone, we use the information you provide only to respond to your enquiry and manage our relationship with you. You may ask to access, correct, or delete personal information we hold about you by emailing 
+					We never sell your data and only use it for the reason you gave it to us. Under the GDPR you can ask to see, correct or delete your personal data by emailing info@circlesolutions.com. You can also file a complaint with the Dutch Data Protection Authority (Autoriteit Persoonsgegevens).
                     <a href="mailto:hi@circlesolutions.com">hi@circlesolutions.com</a>.
                 </p>
             </article>
@@ -77,8 +80,8 @@
 
         <!-- Button-->
         <div class="actions">
-            <a href="../index.html" class="btn">Back to Home</a>
-            <a href="contact.html" class="btn">Contact us</a>
+            <a href="../index.html" class="btn" data-i18n="privacy.back">Back to Home</a>
+            <a href="contact.php" class="btn" data-i18n="privacy.contact">Contact us</a>
         </div>
     </main>
 
@@ -118,7 +121,7 @@
 						<a href="guestbook.php" data-i18n="nav.guestbook">Guestbook</a>
 					</li>
 					<li>
-						<a href="contact.html" data-i18n="nav.contact">Contact</a>
+						<a href="contact.php" data-i18n="nav.contact">Contact</a>
 					</li>
 					<li>
 						<a href="faq.html" data-i18n="nav.faq">FAQ</a>
@@ -156,6 +159,8 @@
 			</div>
 		</div>
 	</footer>
+
+	<script src="../js/lang.js"></script>
 
 </body>
 </html>
