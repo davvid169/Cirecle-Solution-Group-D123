@@ -423,6 +423,7 @@
     .timeline-track {
         display: none;
     }
+  }
 @media (max-width: 600px) {
     .about-main,
     .faq-main,
