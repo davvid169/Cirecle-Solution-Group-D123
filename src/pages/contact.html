@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Circle Solutions</title>
+    <title data-i18n="contact.title">Contact - Circle Solutions</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/david.css">
 </head>
@@ -16,12 +16,12 @@
     </a>
 
         <nav class="nav-links">
-            <a href="../index.html" >Home</a>
-            <a href="../pages/about.html">About us</a>
-            <a href="../pages/solutions.html">Solutios</a>
-            <a href="../pages/contact.html" class="active">Contact</a>
-            <a href="../pages/guestbook.php">Guestpage</a>
-            <a href="../pages/faq.html">FAQ</a>
+            <a href="../index.html" data-i18n="nav.home">Home</a>
+            <a href="../pages/about.html" data-i18n="nav.about">About us</a>
+            <a href="../pages/solutions.html" data-i18n="nav.solutions">Solutions</a>
+            <a href="../pages/contact.html" class="active" data-i18n="nav.contact">Contact</a>
+            <a href="../pages/guestbook.php" data-i18n="nav.guestbook">Guestbook</a>
+            <a href="../pages/faq.html" data-i18n="nav.faq">FAQ</a>
             <br>
 				<div class="lang-switch" role="group" aria-label="Language">
 					<button class="btn-lang" data-lang="en" type="button">EN</button>
@@ -35,14 +35,16 @@
 
     <section class="first-part">
         <div class="kuki">
-            <p>Contact us</p>
+            <p data-i18n="contact.badge">Contact us</p>
         </div>
 
         <div>
-            <h1>Let's talk about your next project</h1>
+            <h1 data-i18n="contact.h1">Let's talk about your next project</h1>
         </div>
-            <p>Whether you have a specific challenge in mind or are just exploring <br> what is possible Sarah and the team are happy to think along with you.</p>
-        <div>
+		<p data-i18n-html="contact.intro">
+			Whether you have a specific challenge in mind or are just exploring <br>
+	what is possible Sarah and the team are happy to think along with you.</p>
+		<div>
 
         </div>
     </section>
@@ -57,8 +59,8 @@
                 </svg>
 
                 <div>
-                    <h3>Direct communication</h3>
-                    <p>Choose the channel that's right for you.</p>
+                    <h3 data-i18n="contact.direct.h3">Direct communication</h3>
+                    <p data-i18n="contact.direct.p">Choose the channel that's right for you.</p>
                 </div>
             </div>
 
@@ -70,7 +72,7 @@
                             <path d="M28.9171 17.0421L21.7987 21.5755C21.5571 21.7158 21.2827 21.7896 21.0034 21.7896C20.724 21.7896 20.4497 21.7158 20.2081 21.5755L13.0825 17.0421M28.9171 17.0421V16.2505C28.9171 15.3761 28.2082 14.6673 27.3337 14.6673H14.666C13.7915 14.6673 13.0825 15.3761 13.0825 16.2505V17.0421M28.9171 17.0421V25.7495C28.9171 26.6239 28.2082 27.3327 27.3337 27.3327H14.666C13.7915 27.3327 13.0825 26.6239 13.0825 25.7495V17.0421" stroke-width="1.8" stroke-linecap="round" stroke="#079CCB"/>
                         </svg>
                         <div>
-                            <span class="label">Email</span>
+                            <span class="label" data-i18n="contact.email">Email</span>
                             <p>hi@circlesolutions.com</p>
                             <p>contact@circlesolutions.nl</p>
                         </div>
@@ -83,7 +85,7 @@
                         </svg>
 
                         <div>
-                            <span class="label">Phone Number</span>
+                            <span class="label" data-i18n="contact.phone">Phone Number</span>
                             <p>+31 6 12 34 56 78</p>
                         </div>
                     </li>
@@ -95,8 +97,8 @@
                         </svg>
 
                         <div>
-                            <span class="label">Working Times</span>
-                            <p>7/24</p>
+                            <span class="label" data-i18n="contact.hours.label">Working Times</span>
+                            <p data-i18n="contact.hours.value">7/24</p>
                         </div>
                     </li>
 
@@ -107,8 +109,8 @@
                         </svg>
 
                         <div>
-                            <span class="label">Location</span>
-                            <p>Emmen, Netherlands</p>
+                            <span class="label" data-i18n="contact.location.label">Location</span>
+                            <p data-i18n="contact.location.value">Emmen, Netherlands</p>
                         </div>
                     </li>
                 </ul>
@@ -118,22 +120,24 @@
         <div class="right-box">
             <form class="form-box" action="process.php" method="post" novalidate>
                 <div class="form-header">
-                    <h2>Send us a message</h2>
-                    <p>We read every message within one business day</p>
+                    <h2 data-i18n="contact.form.h2">Send us a message</h2>
+                    <p data-i18n="contact.form.p">We read every message within one business day</p>
                 </div>
                 <div class="field">
-                    <label for="name">Name*</label>
+                    <label for="name" data-i18n="contact.form.name">Name*</label>
                     <input type="text" id="name" name="name" placeholder="Sarah Klein" required>
                 </div>
                 <div class="field">
-                    <label for="email">Email*</label>
+                    <label for="email" data-i18n="contact.form.email">Email*</label>
                     <input type="email" id="email" name="email" placeholder="xxxxxxxx@gmail.com" required>
                 </div>
                 <div class="field">
-                    <label for="message">Message*</label>
-                    <textarea name="message" id="message" placeholder="Send us a message..." required></textarea>
+                    <label for="message" data-i18n="contact.form.message">Message*</label>
+					<textarea name="message" id="message"
+		   data-i18n-placeholder="contact.form.placeholder"
+		   placeholder="Send us a message..." required=""></textarea>
                 </div>
-                <button type="submit">Send Message</button>
+                <button type="submit" data-i18n="contact.form.submit">Send Message</button>
             </form>
         </div>
     </section>
