@@ -1,3 +1,45 @@
+<?php
+$error = [];
+$name = "";
+$email = "";
+$message = "";
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $name = trim($_POST['name']);
+    $email = trim($_POST['email']);
+    $message =trim( $_POST['message']);
+
+    if(empty($name)){
+        $error['name'] = "Name is required";
+    }else if(strlen($name) < 5){
+        $error['name'] = "Name must be at least 5 characters.";
+    }else if(!preg_match('/[A-Z]/',$name)){
+        $error['name'] = "Name must contain at least 1 uppercase letter";
+    }
+
+    if(empty($email)){
+        $error['email'] = "Email is required";
+    }elseif(!str_contains($email, '@')){
+        $error['email'] = "Email must contain @";
+    }
+
+    if(empty($message)){
+        $error['message'] = "Message is required";
+    }else if(strlen($message) < 5){
+        $error['message'] = "Message must be at least 5 characters.";
+    }
+
+    if (empty($error)) {
+        header("Location: mailto:vadaszdavid06@gmail.com");
+        exit;
+    }
+
+}
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,7 +61,7 @@
             <a href="../index.html" data-i18n="nav.home">Home</a>
             <a href="../pages/about.html" data-i18n="nav.about">About us</a>
             <a href="../pages/solutions.html" data-i18n="nav.solutions">Solutions</a>
-            <a href="../pages/contact.html" class="active" data-i18n="nav.contact">Contact</a>
+            <a href="../pages/contact.php" class="active" data-i18n="nav.contact">Contact</a>
             <a href="../pages/guestbook.php" data-i18n="nav.guestbook">Guestbook</a>
             <a href="../pages/faq.html" data-i18n="nav.faq">FAQ</a>
             <br>
@@ -118,27 +160,36 @@
         </div>
 
         <div class="right-box">
-            <form class="form-box" action="process.php" method="post" novalidate>
+            <form class="form-box" action="contact.php" method="post" novalidate>
                 <div class="form-header">
                     <h2 data-i18n="contact.form.h2">Send us a message</h2>
                     <p data-i18n="contact.form.p">We read every message within one business day</p>
                 </div>
                 <div class="field">
                     <label for="name" data-i18n="contact.form.name">Name*</label>
-                    <input type="text" id="name" name="name" placeholder="Sarah Klein" required>
+                    <input type="text" id="name" name="name" placeholder="Sarah Klein" required class="<?php if (isset($error['name'])) echo 'input-error'; ?>" value="<?= $name ?>">
+                    <?php if (isset($error['name'])): ?>
+                    <p class="error-text"><?= $error['name'] ?></p>
+                    <?php endif; ?>
                 </div>
                 <div class="field">
                     <label for="email" data-i18n="contact.form.email">Email*</label>
-                    <input type="email" id="email" name="email" placeholder="xxxxxxxx@gmail.com" required>
+                    <input type="email" id="email" name="email" placeholder="xxxxxxxx@gmail.com" required class="<?php if (isset($error['email'])) echo 'input-error'; ?>" value="<?= $email ?>">
+                    <?php if (isset($error['email'])): ?>
+                    <p class="error-text"><?= $error['email'] ?></p>
+                    <?php endif; ?>
                 </div>
                 <div class="field">
                     <label for="message" data-i18n="contact.form.message">Message*</label>
 					<textarea name="message" id="message"
 		   data-i18n-placeholder="contact.form.placeholder"
-		   placeholder="Send us a message..." required=""></textarea>
+		   placeholder="Send us a message..." required="" class="<?php if (isset($error['message'])) echo 'input-error'; ?>"><?= $message ?></textarea>
+                    <?php if (isset($error['message'])): ?>
+                    <p class="error-text"><?= $error['message'] ?></p>
+                    <?php endif; ?>
                 </div>
                 
-                <a class="emailto" href="mailto:vadaszdavid06@gmail.com">Send email</a>
+                <button class="gomb" type="submit">Send Message</button>
             </form>
         </div>
     </section>
@@ -175,7 +226,7 @@
 						<a href="guestbook.php" data-i18n="nav.guestbook">Guestbook</a>
 					</li>
 					<li>
-						<a href="contact.html" data-i18n="nav.contact">Contact</a>
+						<a href="contact.php" data-i18n="nav.contact">Contact</a>
 					</li>
 					<li>
 						<a href="faq.html" data-i18n="nav.faq">FAQ</a>

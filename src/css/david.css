@@ -108,8 +108,7 @@
     resize: vertical;
 }
 
-.emailto{
-    align-items: center;
+.gomb{
     background-color: #093546;
     color: white;
     padding: 14px;
@@ -121,18 +120,21 @@
     cursor: pointer;
 }
 
-.emailto:hover{
+.gomb:hover{
     background-color: #079ccb;
 }
 
-.body-result{
-    display: flex;
-    justify-content: center;    
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    background-color: aliceblue;
+
+.input-error {
+    border: 2px solid red;
 }
+
+.error-text{
+    color: red;
+    margin: 0;
+    margin-left: 4px;
+}
+<<<<<<< HEAD
 
 .errors{
     background-color: white;
@@ -354,3 +356,5 @@ Plak dit onderaan guestbook.css:
         box-sizing: border-box;
     }
 }
+=======
+>>>>>>> ffa94b136826941bd489ae668685e7babde1c4c0
