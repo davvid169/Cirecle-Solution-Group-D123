@@ -72,7 +72,7 @@ $messages = $_SESSION['guestbook_messages'];
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Guestbook - Circle Solutions</title>
+<title data-i18n="guest.title">Guestbook - Circle Solutions</title>
 
 <link rel="stylesheet" href="../css/style.css">
 <link rel="stylesheet" href="../css/guestbook.css">
@@ -105,20 +105,20 @@ $messages = $_SESSION['guestbook_messages'];
 
 <!-- FORM -->
 <div class="guestbook-form-section">
-<span class="sub-title2">Guestbook</span>
-<h1>Share your experience</h1>
-<p class="subtitle-text">Worked with Circle Solutions? Leave a note for our team in the guestbook.</p>
+<span class="sub-title2" data-i18n="guest.subtitle">Guestbook</span>
+<h1 data-i18n="guest.h1">Share your experience</h1>
+<p class="subtitle-text" data-i18n="guest.p">Worked with Circle Solutions? Leave a note for our team in the guestbook.</p>
 
 <!-- Success -->
 <?php if ($message_sent): ?>
 <div style="background-color: #d4edda; color: #155724; padding: 12px; margin-bottom: 20px; border-radius: 5px;">
-Thank you! Your message has been successfully posted.
+<data-i18n="guest.success">Thank you! Your message has been successfully posted.</data-i18n>
 </div>
 <?php endif; ?>
 
 <!-- Error -->
 <?php if (!empty($error_message)): ?>
-<div style="background-color: #f8d7da; color: #721c24; padding: 12px; margin-bottom: 20px; border-radius: 5px;">
+<div style="background-color: #f8d7da; color: #721c24; padding: 12px; margin-bottom: 20px; border-radius: 5px;" >
 <?php echo htmlspecialchars($error_message); ?>
 </div>
 <?php endif; ?>
@@ -126,29 +126,29 @@ Thank you! Your message has been successfully posted.
 <div class="form-back">
 <form action="guestbook.php" method="POST">
 <div class="form-group">
-<label for="name">Your Name :</label>
+<label for="name" data-i18n="guest.form.name">Your Name :</label>
 <br>
-<input type="text" id="name" name="name" placeholder="Sarah Klein.."
+<input type="text" id="name" name="name" data-i18n-html="guest.form.name.placeholder" placeholder="Sarah Klein.."
 minlength="2" maxlength="50"
 value="<?php echo isset($_POST['name']) ? htmlspecialchars($_POST['name']) : ''; ?>">
 </div>
 
 <div class="form-group">
-<label for="companyname">Company Name :</label>
+<label for="companyname" data-i18n="guest.form.company">Company Name :</label>
 <br>
-<input type="text" id="companyname" name="companyname" placeholder="Circle Solutions..."
+<input type="text" id="companyname" name="companyname" data-i18n-html="guest.form.company.placeholder" placeholder="Circle Solutions..."
 minlength="2" maxlength="100"
 value="<?php echo isset($_POST['companyname']) ? htmlspecialchars($_POST['companyname']) : ''; ?>">
 </div>
 
 <div class="form-group">
-<label for="message">Your Message (10 - 500 characters):</label>
+<label for="message" data-i18n="guest.form.message">Your Message (10 - 500 characters):</label>
 <br>
-<textarea id="message" name="message" placeholder="Share your experience with us..."
+<textarea id="message" name="message" data-i18n-html="guest.form.message.placeholder" placeholder="Share your experience with us..."
 minlength="10" maxlength="500"><?php echo isset($_POST['message']) ? htmlspecialchars($_POST['message']) : ''; ?></textarea>
 </div>
 
-<button type="submit" class="btn-submit">Sign the guestbook</button>
+<button type="submit" class="btn-submit" data-i18n="guest.form.submit"  >Sign the guestbook</button>
 </form>
 </div>
 </div>
@@ -160,7 +160,7 @@ minlength="10" maxlength="500"><?php echo isset($_POST['message']) ? htmlspecial
 <div class="guestbook-feed-section">
 <?php if (empty($messages)): ?>
 <div class="empty-state">
-<p>No messages yet. Be the first to share your experience!</p>
+<p data-i18n="guest.empty">No messages yet. Be the first to share your experience!</p>
 </div>
 
 <?php else: ?>
