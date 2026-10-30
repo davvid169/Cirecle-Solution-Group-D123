@@ -177,7 +177,23 @@ const translations = {
         "terms.c4.h2": "Liability and governing law",
         "terms.c4.p": "To the extent permitted by law, Circle Solutions is not liable for loss arising solely from reliance on this website or from temporary unavailability. These terms are governed by Dutch law. Questions can be sent to",
         "terms.back": "Back to Home",
-        "terms.contact": "Contact us"
+        "terms.contact": "Contact us",
+
+        /* ---------- GUESTBOOK ---------- */
+        "guest.title": "Guestbook - Circle Solutions",
+        "guest.subtitle": "Guestbook",
+        "guest.h1": "Share your experience",
+        "guest.p": "Worked with Circle Solutions? Leave a note for our team in the guestbook.",
+        "guest.form.name": "Your Name :",
+        "guest.form.company": "Company Name :",
+        "guest.form.message": "Your Message (10 - 500 characters):",
+        "guest.form.name.placeholder": "Sarah Klein..",
+        "guest.form.company.placeholder": "Circle Solutions...",
+        "guest.form.message.placeholder": "Share your experience with us...",
+        "guest.form.submit": "Sign the guestbook",
+        "guest.success": "Thank you! Your message has been successfully posted.",
+        "guest.empty": "No messages yet. Be the first to share your experience!",
+        "guest.delete.confirm": "Are you sure you want to delete this message?"
     },
 
     nl: {
@@ -356,9 +372,25 @@ const translations = {
         "terms.c3.h2": "Toegestaan gebruik",
         "terms.c3.p": "Je mag deze website niet misbruiken, geen onbevoegde toegang proberen te krijgen, de werking niet verstoren en de inhoud niet gebruiken op een manier die inbreuk maakt op de rechten van Circle Solutions of anderen. Bijdragen aan het gastenboek moeten rechtmatig, relevant en respectvol zijn.",
         "terms.c4.h2": "Aansprakelijkheid en toepasselijk recht",
-        "terms.c4.p": "Voor zover wettelijk toegestaan is Circle Solutions niet aansprakelijk voor schade die uitsluitend voortvloeit uit het vertrouwen op deze website of uit tijdelijke onbeschikbaarheid. Op deze voorwaarden is Nederlands recht van toepassing. Vragen kunnen worden gestuurd naar",
+            "terms.c4.p": "Voor zover wettelijk toegestaan is Circle Solutions niet aansprakelijk voor schade die uitsluitend voortvloeit uit het vertrouwen op deze website of uit tijdelijke onbeschikbaarheid. Op deze voorwaarden is Nederlands recht van toepassing. Vragen kunnen worden gestuurd naar",
         "terms.back": "Terug naar home",
-        "terms.contact": "Neem contact op"
+        "terms.contact": "Neem contact op",
+
+        /* ---------- GUESTBOOK ---------- */
+        "guest.title": "Gastenboek - Circle Solutions",
+        "guest.subtitle": "Gastenboek",
+        "guest.h1": "Deel je ervaring",
+        "guest.p": "Samengewerkt met Circle Solutions? Laat een bericht achter voor ons team in het gastenboek.",
+        "guest.form.name": "Je naam :",
+        "guest.form.company": "Bedrijfsnaam :",
+        "guest.form.message": "Je bericht (10 - 500 tekens):",
+        "guest.form.name.placeholder": "Sarah Klein..",
+        "guest.form.company.placeholder": "Circle Solutions...",
+        "guest.form.message.placeholder": "Deel je ervaring met ons...",
+        "guest.form.submit": "Onderteken het gastenboek",
+        "guest.success": "Bedankt! Je bericht is succesvol geplaatst.",
+        "guest.empty": "Nog geen berichten. Wees de eerste die zijn ervaring deelt!",
+        "guest.delete.confirm": "Weet je zeker dat je dit bericht wilt verwijderen?"
     }
 };
 
