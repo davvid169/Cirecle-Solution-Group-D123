@@ -200,7 +200,8 @@ minlength="10" maxlength="500"><?php echo isset($_POST['message']) ? htmlspecial
 <div class="logo light">
 <span class="logo-icon"></span><img src="/images/LOGO.png" alt="">
 </div>
-<p>Custom software for logistics, healthcare, and education. <br>Founded in Amersfoort, 2005.</p>
+<p data-i18n-html="footer.tagline">Custom software for logistics, healthcare, and education. </p>
+<br><p data-i18n="footer.founded">Founded in Amersfoort, 2005.</p>
 </div>
 <div class="footer-col">
 <h4>Company</h4>
@@ -216,24 +217,24 @@ minlength="10" maxlength="500"><?php echo isset($_POST['message']) ? htmlspecial
 <div class="footer-col">
 <h4>Sector</h4>
 <ul>
-<li><a href="solutions.html">Logistics</a></li>
-<li><a href="solutions.html">Healthcare</a></li>
-<li><a href="solutions.html">Education</a></li>
+<li data-i18n="footer.logistics"><a href="solutions.html">Logistics</a></li>
+<li data-i18n="footer.healthcare"><a href="solutions.html">Healthcare</a></li>
+<li data-i18n="footer.education"><a href="solutions.html">Education</a></li>
 </ul>
 </div>
 <div class="footer-col">
-<h4>Get in touch</h4>
+<h4 data-i18n="footer.touch">Get in touch</h4>
 <p>info@circlesolutions.com</p>
 <p>+31 0 12 34 56 78</p>
-<p>Amersfoort, Netherlands</p>
+<p data-i18n="footer.city">Amersfoort, Netherlands</p>
 </div>
 </div>
 <div class="footer-bottom">
 <div class="container flex-between">
-<p>&copy; 2026 Circle Solutions B.V. — Amersfoort, Netherlands</p>
+<p data-i18n="footer.copy">&copy; 2026 Circle Solutions B.V. — Amersfoort, Netherlands</p>
 <div class="legal-links">
-<a href="privacy.html">Privacy</a>
-<a href="terms.html">Terms & Conditions</a>
+<a href="privacy.html" data-i18n="footer.privacy">Privacy</a>
+<a href="terms.html" data-i18n="footer.terms">Terms & Conditions</a>
 </div>
 </div>
 </div>
