@@ -85,3 +85,45 @@
         grid-template-columns: 1fr;
     }
 }
+
+@media (max-width: 600px) {
+    .terms-header {
+        margin-bottom: 25px;
+    }
+
+    .terms-header h1 {
+        font-size: 30px;
+    }
+
+    .terms-header .subtitle {
+        font-size: 14px;
+    }
+
+    .cards-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .card h2 {
+        font-size: 18px;
+    }
+
+    .card p {
+        font-size: 14px;
+        overflow-wrap: anywhere;
+    }
+
+    .actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .actions .btn {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}

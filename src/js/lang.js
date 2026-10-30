@@ -223,7 +223,7 @@ const translations = {
         "home.title": "Circle Solutions - Home",
         "home.hero.title": "Maatwerksoftware die werkt <br> zoals jij werkt.",
         "home.hero.text": "Wij helpen organisaties in logistiek, zorg en onderwijs hun processen te vereenvoudigen met software die past.",
-        "home.hero.tagline": "Verbind gewoon de puntjes",
+        "home.hero.tagline": "Just connect the dots",
         "home.hero.cta": "Neem contact op",
         "home.hero.brochure": "Download de brochure",
         "home.dots.lead": "Circle D.O.T.S is een modulair platform met digitale kantoortools waarmee bedrijven hun interne processen efficiënter inrichten.",
