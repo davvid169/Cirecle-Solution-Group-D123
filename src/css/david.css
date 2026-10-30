@@ -62,7 +62,7 @@
     padding: 20px;
     border-radius: 20px;
     margin: 60px;
-    background-color: #94a3b8;
+    background-color: #799dab;
 }
 
 .form-box{
@@ -98,7 +98,6 @@
 .field input, textarea{
      font-family: inherit;
     width: 100%;
-    border: 1px solid black;
     border-radius: 8px;
     padding: 12px;
     background-color: white;
