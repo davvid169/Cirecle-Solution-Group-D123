@@ -66,7 +66,7 @@ $messages = $_SESSION['guestbook_messages'];
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Circle Solutions - Guestbook</title>
+    <title>Guestbook - Circle Solutions</title>
     
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/guestbook.css">
@@ -84,7 +84,7 @@ $messages = $_SESSION['guestbook_messages'];
                 <a href="about.html">About us</a>
                 <a href="solutions.html">Solutions</a>
                 <a href="contact.html">Contact</a>
-                <a href="guestbook.php" class="active">Guestpage</a>
+                <a href="guestbook.php" class="active">Guestbook</a>
                 <a href="faq.html">FAQ</a>
                 <br>
                 <button class="btn-lang"> NL | EN </button>

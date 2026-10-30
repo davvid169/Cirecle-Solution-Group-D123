@@ -77,9 +77,9 @@ ul {
   transform: scale(1.08);
   transition: all 0.2s ease;
   padding: 12px 20px;
-  
 }
-/ --- lANGUAGE SWITCH --- */
+
+/* --- lANGUAGE SWITCH --- */
 .lang-switch {
   display: inline-flex;
   align-items: center;
@@ -173,9 +173,29 @@ ul {
 }
 
 
-
 .btn:hover {
   background-color: #093546;
+}
+
+.btn-circle-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.btn-circle-wrapper svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-56%, -37%);
+    width: 150%;
+    height: auto;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.btn-circle-wrapper .btn {
+    position: relative;
+    z-index: 2;
 }
 
 /* --- CIRCLE D.O.T.S. SECTION --- */
