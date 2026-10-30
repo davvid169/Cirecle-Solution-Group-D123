@@ -134,3 +134,227 @@
     margin: 0;
     margin-left: 4px;
 }
+<<<<<<< HEAD
+
+.errors{
+    background-color: white;
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 20px;
+    border: 4px solid darkred;
+    
+
+    h3, h3{
+        color:#093546;
+    }
+
+    p{
+        color: grey;
+    }
+
+    a{
+        display: inline-block;
+        background-color: #093546;
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        padding: 10px;
+    }
+}
+
+.answer{
+     background-color: white;
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 20px;
+    border: 4px solid darkgreen;
+    
+
+    h3, h3{
+        color:#093546;
+    }
+
+    p{
+        color: grey;
+    }
+
+    a{
+        display: inline-block;
+        background-color: #093546;
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        padding: 10px;
+    }
+}
+@media (max-width: 900px) {
+    .contact-form {
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .left-box,
+    .right-box {
+        margin: 10px;
+    }
+
+    .left-box {
+        width: 300px;
+        flex-shrink: 0;
+    }
+
+    .field input,
+    .field textarea {
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 600px) {
+    .first-part {
+        padding: 20px;
+    }
+
+    .first-part h1 {
+        font-size: 30px;
+    }
+
+    .first-part p {
+        font-size: 15px;
+    }
+
+    .contact-form {
+        flex-direction: column;
+        padding: 15px;
+        gap: 20px;
+    }
+
+    .left-box,
+    .right-box {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .form-box {
+        width: 100%;
+    }
+
+    .field input,
+    .field textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .errors,
+    .answer {
+        width: calc(100% - 30px);
+        max-width: 500px;
+        padding: 25px 15px;
+        box-sizing: border-box;
+        overflow-wrap: anywhere;
+    }
+
+    .body-result {
+        padding: 15px;
+        box-sizing: border-box;
+    }
+}
+
+
+
+3. guestbook.css — Gastenboek
+Plak dit onderaan guestbook.css:
+
+/* RESPONSIVE GUESTBOOK */
+
+@media (max-width: 900px) {
+    .main-guestbook-layout {
+        max-width: 100%;
+        padding: 0 25px;
+    }
+}
+
+@media (max-width: 600px) {
+    .main-guestbook-layout {
+        margin: 25px auto;
+        padding: 0 15px;
+    }
+
+    .guestbook-form-section h1 {
+        font-size: 1.7rem;
+    }
+
+    .subtitle-text {
+        font-size: 0.9rem;
+    }
+
+    .form-back {
+        padding: 18px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .guestbook-card {
+        padding: 15px;
+    }
+
+    .card-body {
+        padding: 15px;
+    }
+
+    .card-body p {
+        text-align: left;
+        overflow-wrap: anywhere;
+    }
+
+    .details h3,
+    .company-name {
+        overflow-wrap: anywhere;
+    }
+
+    .guestbook-feed-section h2 {
+        font-size: 1.3rem;
+    }
+}
+@media (max-width: 600px) {
+    .first-part,
+    .contact-form {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    .contact-form {
+        flex-direction: column;
+    }
+
+    .left-box,
+    .right-box {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .field input,
+    .field textarea {
+        max-width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+}
+=======
+>>>>>>> ffa94b136826941bd489ae668685e7babde1c4c0
