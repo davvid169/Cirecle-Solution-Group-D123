@@ -10,6 +10,62 @@
   z-index: 1000;
 }
 
+.image-pill-sol {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 550px;
+  margin: 0 auto;
+  padding: 0;
+  overflow: visible;
+  border-radius: 0;
+}
+
+.image-pill__img-sol,
+.image-pill__img--logistics-sol,
+.image-pill__img--healthcare-sol,
+.image-pill__img--education-sol {
+  display: block;
+  position: static;
+  top: auto;
+  left: auto;
+  right: auto;
+  bottom: auto;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 24px;
+}
+
+.image-col-sol {
+  width: 100%;
+  min-width: 0;
+}
+
+@media (min-width: 1001px) {
+  .container--split-sol {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 48px;
+  }
+
+  .content-col-sol,
+  .image-col-sol {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+
+  .image-pill-sol {
+    max-width: 550px;
+  }
+}
+
 @media (max-width: 1000px) {
   *,
   *::before,
@@ -43,6 +99,28 @@
     max-width: 100%;
   }
 
+  .container--split-sol {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 28px;
+    max-width: 700px;
+    margin-inline: auto;
+  }
+
+  .content-col-sol,
+  .image-col-sol {
+    width: 100%;
+    flex: none;
+    min-width: 0;
+  }
+
+  .image-pill-sol {
+    max-width: 650px;
+  }
+}
+
+@media (max-width: 900px) {
   .navbar {
     position: sticky;
     top: 0;
@@ -54,6 +132,8 @@
 
   .nav-container {
     display: flex;
+    flex-direction: row;
+    padding: 0;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -161,6 +241,15 @@
     outline: 2px solid #408ba9;
     outline-offset: 2px;
   }
+
+  .nav-container > .nav-links br {
+    display: none;
+  }
+
+  .nav-container > .nav-links .lang-switch {
+    align-self: flex-start;
+    margin: 8px 15px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -211,8 +300,7 @@
   .faq-container,
   .timeline-grid,
   .stats-container,
-  .why-container,
-  .container--split-sol {
+  .why-container {
     grid-template-columns: minmax(0, 1fr);
   }
 
@@ -274,7 +362,15 @@
   }
 
   .image-pill-sol {
+    width: 100%;
     max-width: 100%;
+    height: auto;
+  }
+
+  .image-pill__img-sol {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
   }
 
   .faq-main,
@@ -367,6 +463,14 @@
   .page-header h1,
   .faq-header h1 {
     font-size: clamp(1.8rem, 8vw, 2.5rem);
+  }
+
+  .image-pill-sol {
+    max-width: 100%;
+  }
+
+  .image-pill__img-sol {
+    border-radius: 16px;
   }
 }
 
